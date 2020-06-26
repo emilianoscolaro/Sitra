@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FDAD7999-A943-48EA-B0CB-9630C2CBE2FF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AvicolaWindows</RootNamespace>
+    <AssemblyName>Sitra</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Emiliano\Desktop\Sitra\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>Sitra</ProductName>
+    <PublisherName>Emiliano Scolaro</PublisherName>
+    <ApplicationRevision>5</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icono.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>F5AC855D71E385F8BACCB448341F8E702FF829A0</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>AvicolaWindows_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.5.5631.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.STW.2.5.5631\lib\net40\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\..\..\..\..\..\Emi\Programacion\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Build.Tasks.v4.0" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="SpreadsheetLight, Version=3.4.11.0, Culture=neutral, PublicKeyToken=32fbb46dc1730c57, processorArchitecture=MSIL">
+      <HintPath>..\packages\SpreadsheetLight.3.4.11\lib\net40\SpreadsheetLight.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.Primitives.4.3.0\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Packaging, Version=4.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Packaging.4.7.0\lib\net46\System.IO.Packaging.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\Config.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\Config.Designer.cs">
+      <DependentUpon>Config.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\Foto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\Foto.Designer.cs">
+      <DependentUpon>Foto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\Clientes.Designer.cs">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateForms\CrearCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateForms\CrearCliente.Designer.cs">
+      <DependentUpon>CrearCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateForms\CrearInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateForms\CrearInventario.Designer.cs">
+      <DependentUpon>CrearInventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateForms\CrearOperacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateForms\CrearOperacion.Designer.cs">
+      <DependentUpon>CrearOperacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateForms\CrearPagoCobranza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateForms\CrearPagoCobranza.Designer.cs">
+      <DependentUpon>CrearPagoCobranza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\ImagenBd.cs" />
+    <Compile Include="EditForms\EditarClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditForms\EditarClientes.Designer.cs">
+      <DependentUpon>EditarClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditForms\EditarUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditForms\EditarUsuarios.Designer.cs">
+      <DependentUpon>EditarUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\Factura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\Factura.Designer.cs">
+      <DependentUpon>Factura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\Inventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\Inventario.Designer.cs">
+      <DependentUpon>Inventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\Operaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\Operaciones.Designer.cs">
+      <DependentUpon>Operaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\OpProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\OpProveedores.Designer.cs">
+      <DependentUpon>OpProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\PagosCobranzas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\PagosCobranzas.Designer.cs">
+      <DependentUpon>PagosCobranzas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\Explorador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\Explorador.Designer.cs">
+      <DependentUpon>Explorador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateForms\CrearUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateForms\CrearUsuario.Designer.cs">
+      <DependentUpon>CrearUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\ErrorTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Data\ErrorTextBox.Designer.cs">
+      <DependentUpon>ErrorTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Utilidades.cs" />
+    <Compile Include="MainForms\LogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\LogIn.Designer.cs">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\MainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\MainPage.Designer.cs">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MainForms\Proveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\Proveedores.Designer.cs">
+      <DependentUpon>Proveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\Usuarios.Designer.cs">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Base\Config.resx">
+      <DependentUpon>Config.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\Foto.resx">
+      <DependentUpon>Foto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\Clientes.resx">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateForms\CrearCliente.resx">
+      <DependentUpon>CrearCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateForms\CrearInventario.resx">
+      <DependentUpon>CrearInventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateForms\CrearOperacion.resx">
+      <DependentUpon>CrearOperacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateForms\CrearPagoCobranza.resx">
+      <DependentUpon>CrearPagoCobranza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditForms\EditarClientes.resx">
+      <DependentUpon>EditarClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditForms\EditarUsuarios.resx">
+      <DependentUpon>EditarUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\Explorador.resx">
+      <DependentUpon>Explorador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateForms\CrearUsuario.resx">
+      <DependentUpon>CrearUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\Factura.resx">
+      <DependentUpon>Factura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\Inventario.resx">
+      <DependentUpon>Inventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\LogIn.resx">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\MainPage.resx">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\Operaciones.resx">
+      <DependentUpon>Operaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\OpProveedores.resx">
+      <DependentUpon>OpProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\PagosCobranzas.resx">
+      <DependentUpon>PagosCobranzas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\Proveedores.resx">
+      <DependentUpon>Proveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\Usuarios.resx">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="AvicolaWindows_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\round-account-button-with-user-inside_icon-icons.com_72596.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExeIcon.png" />
+    <None Include="Resources\file_Exel_download_icon-icons.com_68955.png" />
+    <None Include="Resources\ExelBtn.png" />
+    <None Include="Resources\Logo1.jpg" />
+    <None Include="Resources\LogoSimboloPrograma.jpg" />
+    <None Include="Resources\FondoBlanco1.jpg" />
+    <None Include="Resources\pngocean.com %282%29.png" />
+    <None Include="Resources\pngocean.com3.png" />
+    <None Include="Resources\pngocean.com2.png" />
+    <None Include="Resources\pngocean.com %281%29.png" />
+    <None Include="Resources\FondoBlanco.jpg" />
+    <None Include="Resources\Operaciones.png" />
+    <None Include="Resources\Proveedores.png" />
+    <None Include="Resources\Stock.png" />
+    <None Include="Resources\EmpresaLogo.png" />
+    <None Include="Resources\EmpresaLogoAlt1.png" />
+    <None Include="Resources\EmpresaLogoAlt2.png" />
+    <None Include="Resources\LogoAlter.jpg" />
+    <None Include="Resources\Logo.jpg" />
+    <None Include="Resources\FondoUno.jpg" />
+    <None Include="Resources\FotoBtn.png" />
+    <None Include="Resources\pngocean.com1.png" />
+    <None Include="Resources\pngocean.com.png" />
+    <None Include="Resources\NuevoBtn.png" />
+    <None Include="Resources\FacturaBtn.png" />
+    <None Include="Resources\NuevaOpBtn.png" />
+    <None Include="Resources\VerBtn.png" />
+    <None Include="Resources\RefreshDos.png" />
+    <None Include="Resources\Refresh.png" />
+    <None Include="Resources\FondoBtn.png" />
+    <None Include="Resources\model-3211631_1920.jpg" />
+    <None Include="Resources\banner-1504653_1920.png" />
+    <None Include="Resources\23627.jpg" />
+    <None Include="Resources\Back.png" />
+    <None Include="Resources\DescargaBtn.png" />
+    <None Include="Resources\ArcoirisBar.jpg" />
+    <None Include="Resources\DetailBar.jpg" />
+    <None Include="Resources\ConfigBlanco.png" />
+    <None Include="Resources\EditNegro.png" />
+    <None Include="Resources\EditNegro1.png" />
+    <None Include="Resources\Clientes.png" />
+    <None Include="Resources\Caja.png" />
+    <None Include="Resources\CajaPic.png" />
+    <None Include="Resources\AvicolaLogo.png" />
+    <None Include="Resources\AvicolaLogoBlanco.png" />
+    <Content Include="icono.ico" />
+    <Content Include="Resources\edit_4218.png" />
+    <None Include="Resources\EliminarBtn.png" />
+    <Content Include="Resources\embryo-544192_1920.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

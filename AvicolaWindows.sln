@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvicolaWindows", "AvicolaWindows\AvicolaWindows.csproj", "{FDAD7999-A943-48EA-B0CB-9630C2CBE2FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FDAD7999-A943-48EA-B0CB-9630C2CBE2FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDAD7999-A943-48EA-B0CB-9630C2CBE2FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDAD7999-A943-48EA-B0CB-9630C2CBE2FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDAD7999-A943-48EA-B0CB-9630C2CBE2FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C6886EF4-B8E9-432F-B5DF-F2814422B6ED}
+	EndGlobalSection
+EndGlobal
