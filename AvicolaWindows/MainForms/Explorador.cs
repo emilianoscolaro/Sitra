@@ -241,16 +241,18 @@ namespace AvicolaWindows
                 ir++;
             }
 
-            using (var folderDialog = new FolderBrowserDialog())
-            {
-                if (folderDialog.ShowDialog() == DialogResult.OK)
-                {
-                    //ruta = folderDialog.SelectedPath;
-                    sl.SaveAs(@"" +ruta+ @"\"+tipo+".xlsx");
-                }
-            }
 
-            
+             using (var folderDialog = new FolderBrowserDialog())
+             {
+                 if (folderDialog.ShowDialog() == DialogResult.OK)
+                 {
+                     ruta = folderDialog.SelectedPath;
+                    ruta = ruta + "\\"+ tipo + ".xlsx";
+                     sl.SaveAs(ruta);
+                 }
+             }
+
+
 
         }
 
