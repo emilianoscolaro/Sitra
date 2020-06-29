@@ -76,6 +76,7 @@ namespace AvicolaWindows
         {
             Buscar(BuscarTxt, _tipo, "ID", DtClientes);
             if (BuscarTxt.Text == "") { LoadGrid(); OcultarIdCero(DtClientes); }
+            SumaTotal();
         }
 
         private void BuscarTxt_MouseDown(object sender, MouseEventArgs e)
@@ -92,6 +93,7 @@ namespace AvicolaWindows
         {
             Buscar(BuscarCliente, _tipo, "Cliente", DtClientes);
             if (BuscarCliente.Text == "") { LoadGrid(); OcultarIdCero(DtClientes); }
+            SumaTotal();
         }
 
         private void BuscarUsr_MouseDown(object sender, MouseEventArgs e)
@@ -103,6 +105,7 @@ namespace AvicolaWindows
         {
             Buscar(BuscarUsr, _tipo, "Usuario", DtClientes);
             if (BuscarUsr.Text == "") { LoadGrid(); OcultarIdCero(DtClientes); }
+            SumaTotal();
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)

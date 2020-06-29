@@ -136,6 +136,12 @@ namespace AvicolaWindows
                     FormaDEPagoBox.Text = "";
                     ImporteTxt.Text = "";
                     ObservacionesTxt.Text = "";
+                    FotoLabel.Visible = false;
+                    hayFoto = false;
+                    RutaTxt.Text = "";
+                    RutaTxt.Visible = false;
+                    index++;
+                    IdText.Text = index.ToString();
                 }
                 catch (Exception error)
                 {

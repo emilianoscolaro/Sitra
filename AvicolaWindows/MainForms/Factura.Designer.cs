@@ -293,13 +293,14 @@
             // 
             // LeyendaTxt
             // 
+            this.LeyendaTxt.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.LeyendaTxt.AutoSize = true;
             this.LeyendaTxt.BackColor = System.Drawing.SystemColors.Control;
             this.LeyendaTxt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LeyendaTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LeyendaTxt.ForeColor = System.Drawing.Color.DimGray;
             this.LeyendaTxt.Location = new System.Drawing.Point(59, 773);
-            this.LeyendaTxt.MaximumSize = new System.Drawing.Size(561, 68);
+            this.LeyendaTxt.MaximumSize = new System.Drawing.Size(561, 500);
             this.LeyendaTxt.Name = "LeyendaTxt";
             this.LeyendaTxt.Size = new System.Drawing.Size(546, 60);
             this.LeyendaTxt.TabIndex = 17;
@@ -842,12 +843,13 @@
             // 
             // TotalTxt
             // 
+            this.TotalTxt.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.TotalTxt.AutoSize = true;
             this.TotalTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(68)))));
             this.TotalTxt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.TotalTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TotalTxt.ForeColor = System.Drawing.Color.White;
-            this.TotalTxt.Location = new System.Drawing.Point(422, 393);
+            this.TotalTxt.Location = new System.Drawing.Point(371, 392);
             this.TotalTxt.Name = "TotalTxt";
             this.TotalTxt.Size = new System.Drawing.Size(120, 25);
             this.TotalTxt.TabIndex = 21;
@@ -860,7 +862,7 @@
             this.label17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(332, 393);
+            this.label17.Location = new System.Drawing.Point(281, 392);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(84, 25);
             this.label17.TabIndex = 19;

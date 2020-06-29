@@ -176,7 +176,7 @@
             this.DtClientes.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
             this.DtClientes.RowTemplate.Height = 28;
             this.DtClientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DtClientes.Size = new System.Drawing.Size(1154, 372);
+            this.DtClientes.Size = new System.Drawing.Size(1154, 450);
             this.DtClientes.TabIndex = 0;
             this.DtClientes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DtClientes_CellClick);
             this.DtClientes.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DtClientes_CellDoubleClick);
@@ -353,7 +353,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(171)))), ((int)(((byte)(115)))));
-            this.label8.Location = new System.Drawing.Point(962, 667);
+            this.label8.Location = new System.Drawing.Point(962, 750);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(84, 32);
             this.label8.TabIndex = 83;
@@ -366,11 +366,11 @@
             this.TotalTkt.BackColor = System.Drawing.Color.Transparent;
             this.TotalTkt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TotalTkt.ForeColor = System.Drawing.Color.White;
-            this.TotalTkt.Location = new System.Drawing.Point(1054, 667);
+            this.TotalTkt.Location = new System.Drawing.Point(1054, 750);
             this.TotalTkt.Name = "TotalTkt";
-            this.TotalTkt.Size = new System.Drawing.Size(93, 32);
+            this.TotalTkt.Size = new System.Drawing.Size(94, 32);
             this.TotalTkt.TabIndex = 82;
-            this.TotalTkt.Text = "label2";
+            this.TotalTkt.Text = "AR$.0";
             // 
             // pictureBox6
             // 

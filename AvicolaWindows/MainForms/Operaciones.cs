@@ -33,7 +33,6 @@ namespace AvicolaWindows
             DtClientes.DataSource = LlenarDataOp("OpClientes").Tables[0];
             DtClientes.Sort(DtClientes.Columns[0], ListSortDirection.Descending);
             DtClientes.Columns[0].Width = 60;
-            SumaTotal();
             DtClientes.Columns[5].DefaultCellStyle.Format = moneda + "###,##0.00";
         }
 
@@ -78,6 +77,7 @@ namespace AvicolaWindows
         {
             BuscarOp(BuscarTxt, "OpClientes", "ID", DtClientes);
             if (BuscarTxt.Text == "") { LoadGrid(); OcultarIdCero(DtClientes); }
+            SumaTotal();
         }
 
         private void BuscarTxt_MouseDown(object sender, MouseEventArgs e)
@@ -95,6 +95,7 @@ namespace AvicolaWindows
         {
             BuscarOp(BuscarCliente, "OpClientes", "Cliente", DtClientes);
             if (BuscarCliente.Text == "") { LoadGrid(); OcultarIdCero(DtClientes); }
+            SumaTotal();
         }
 
         private void BuscarUsr_MouseDown(object sender, MouseEventArgs e)
@@ -106,6 +107,7 @@ namespace AvicolaWindows
         {
             BuscarOp(BuscarUsr, "OpClientes", "Usuario", DtClientes);
             if (BuscarUsr.Text == "") { LoadGrid(); OcultarIdCero(DtClientes); }
+            SumaTotal();
         }
 
 

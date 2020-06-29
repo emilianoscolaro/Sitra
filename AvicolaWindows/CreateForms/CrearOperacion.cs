@@ -27,7 +27,7 @@ namespace AvicolaWindows
         string _tipo;
         int index;
         string _usuario;
-
+        float valorf, totalf, cantf;
 
 
         private void CrearOperacion_Load(object sender, EventArgs e)
@@ -236,75 +236,7 @@ namespace AvicolaWindows
             Suma();
         }
 
-        private void Cant1_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            SoloNumeros(e);
-        }
-
-        private void Cant2_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            SoloNumeros(e);
-        }
-
-        private void Cant3_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            SoloNumeros(e);
-        }
-
-        private void Cant4_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            SoloNumeros(e);
-        }
-
-        private void Cant5_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            SoloNumeros(e);
-        }
-
-        private void Cant6_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            SoloNumeros(e);
-        }
-
-        private void Cant7_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            SoloNumeros(e);
-        }
-
-        private void Cant8_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            SoloNumeros(e);
-        }
-
-        private void Cant9_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            SoloNumeros(e);
-        }
-
-        private void Cant10_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            SoloNumeros(e);
-        }
-
-        private void Cant11_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            SoloNumeros(e);
-        }
-
-        private void Cant12_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            SoloNumeros(e);
-        }
-
-        private void Cant13_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            SoloNumeros(e);
-        }
-
-        private void Cant14_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            SoloNumeros(e);
-        }
+       
 
 
 
@@ -316,6 +248,102 @@ namespace AvicolaWindows
         private void Val5_KeyPress(object sender, KeyPressEventArgs e)
         {
             SoloNumeros(e);
+        }
+
+        private void Cant1_KeyUp(object sender, KeyEventArgs e)
+        {
+            MultiplicarUnidad(Un1, Cant1, Val1);
+        }
+
+        private void Un1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            SoloNumeros(e);
+            
+        }
+
+        private void Un2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            SoloNumeros(e);
+        }
+
+        private void Cant2_KeyUp(object sender, KeyEventArgs e)
+        {
+            MultiplicarUnidad(Un2, Cant2, Val2);
+        }
+
+        private void Cant3_KeyUp(object sender, KeyEventArgs e)
+        {
+            MultiplicarUnidad(Un3, Cant3, Val3);
+        }
+
+        private void Cant4_KeyUp(object sender, KeyEventArgs e)
+        {
+            MultiplicarUnidad(Un4, Cant4, Val4);
+        }
+
+        private void Cant5_KeyUp(object sender, KeyEventArgs e)
+        {
+            MultiplicarUnidad(Un5, Cant5, Val5);
+        }
+
+        private void Cant6_KeyUp(object sender, KeyEventArgs e)
+        {
+            MultiplicarUnidad(Un6, Cant6, Val6);
+        }
+
+        private void Cant7_KeyUp(object sender, KeyEventArgs e)
+        {
+            MultiplicarUnidad(Un7, Cant7, Val7);
+        }
+
+        private void Cant8_KeyUp(object sender, KeyEventArgs e)
+        {
+            MultiplicarUnidad(Un8, Cant8, Val8);
+        }
+
+        private void Cant9_KeyUp(object sender, KeyEventArgs e)
+        {
+            MultiplicarUnidad(Un9, Cant9, Val9);
+        }
+
+        private void Cant10_KeyUp(object sender, KeyEventArgs e)
+        {
+            MultiplicarUnidad(Un10, Cant10, Val10);
+        }
+
+        private void Cant11_KeyUp(object sender, KeyEventArgs e)
+        {
+            MultiplicarUnidad(Un11, Cant11, Val11);
+        }
+
+        private void Cant12_KeyUp(object sender, KeyEventArgs e)
+        {
+            MultiplicarUnidad(Un12, Cant12, Val12);
+        }
+
+        private void Cant13_KeyUp(object sender, KeyEventArgs e)
+        {
+            MultiplicarUnidad(Un13, Cant13, Val13);
+        }
+
+        private void Cant14_KeyUp(object sender, KeyEventArgs e)
+        {
+            MultiplicarUnidad(Un14, Cant14, Val14);
+        }
+
+        private void Cant15_KeyUp(object sender, KeyEventArgs e)
+        {
+            MultiplicarUnidad(Un15, Cant15, Val15);
+        }
+
+        private void Cant1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            SoloNumeros(e);
+        }
+
+        private void Cant1_KeyUp_1(object sender, KeyEventArgs e)
+        {
+            MultiplicarUnidad(Un1, Cant1, Val1);
         }
 
         private void Val4_KeyUp(object sender, KeyEventArgs e)
@@ -402,13 +430,14 @@ namespace AvicolaWindows
 
             if(indexAgregar == 2)
             {
+                l2.Visible = true;
                 Art2.DataSource = Utilidades.EjecutaList();
                 Art2.DisplayMember = "Articulo";
                 Art2.Visible = true;
                 Art2.Focus();
                 Cant2.Visible = true;
                 Val2.Visible = true;
-                
+                Un2.Visible = true;
             }
             if (indexAgregar == 3)
             {
@@ -418,6 +447,8 @@ namespace AvicolaWindows
                 Art3.Focus();
                 Cant3.Visible = true;
                 Val3.Visible = true;
+                l3.Visible = true;
+                Un3.Visible = true;
             }
             if (indexAgregar == 4)
             {
@@ -427,6 +458,8 @@ namespace AvicolaWindows
                 Art4.Focus();
                 Cant4.Visible = true;
                 Val4.Visible = true;
+                l4.Visible = true;
+                Un4.Visible = true;
             }
             if (indexAgregar == 5)
             {
@@ -436,6 +469,8 @@ namespace AvicolaWindows
                 Art5.Focus();
                 Cant5.Visible = true;
                 Val5.Visible = true;
+                l5.Visible = true;
+                Un5.Visible = true;
             }
             if (indexAgregar == 6)
             {
@@ -445,6 +480,8 @@ namespace AvicolaWindows
                 Art6.Focus();
                 Cant6.Visible = true;
                 Val6.Visible = true;
+                l6.Visible = true;
+                Un6.Visible = true;
             }
             if (indexAgregar == 7)
             {
@@ -454,6 +491,8 @@ namespace AvicolaWindows
                 Art7.Focus();
                 Cant7.Visible = true;
                 Val7.Visible = true;
+                l7.Visible = true;
+                Un7.Visible = true;
             }
             if (indexAgregar == 8)
             {
@@ -463,6 +502,8 @@ namespace AvicolaWindows
                 Art8.Focus();
                 Cant8.Visible = true;
                 Val8.Visible = true;
+                l8.Visible = true;
+                Un8.Visible = true;
             }
             if (indexAgregar == 9)
             {
@@ -472,6 +513,8 @@ namespace AvicolaWindows
                 Art9.Focus();
                 Cant9.Visible = true;
                 Val9.Visible = true;
+                l9.Visible = true;
+                Un9.Visible = true;
             }
             if (indexAgregar == 10)
             {
@@ -481,6 +524,8 @@ namespace AvicolaWindows
                 Art10.Focus();
                 Cant10.Visible = true;
                 Val10.Visible = true;
+                l10.Visible = true;
+                Un10.Visible = true;
             }
             if (indexAgregar == 11)
             {
@@ -490,6 +535,8 @@ namespace AvicolaWindows
                 Art11.Focus();
                 Cant11.Visible = true;
                 Val11.Visible = true;
+                l1.Visible = true;
+                Un11.Visible = true;
             }
             if (indexAgregar == 12)
             {
@@ -499,6 +546,8 @@ namespace AvicolaWindows
                 Art12.Focus();
                 Cant12.Visible = true;
                 Val12.Visible = true;
+                l12.Visible = true;
+                Un12.Visible = true;
             }
             if (indexAgregar == 13)
             {
@@ -508,6 +557,8 @@ namespace AvicolaWindows
                 Art13.Focus();
                 Cant13.Visible = true;
                 Val13.Visible = true;
+                l13.Visible = true;
+                Un13.Visible = true;
             }
             if (indexAgregar == 14)
             {
@@ -517,6 +568,8 @@ namespace AvicolaWindows
                 Art14.Focus();
                 Cant14.Visible = true;
                 Val14.Visible = true;
+                l14.Visible = true;
+                Un14.Visible = true;
             }
             if (indexAgregar == 15)
             {
@@ -526,12 +579,29 @@ namespace AvicolaWindows
                 Art15.Focus();
                 Cant15.Visible = true;
                 Val15.Visible = true;
+                l15.Visible = true;
+                Un15.Visible = true;
             }
 
 
 
         }
 
+
+        private void MultiplicarUnidad(TextBox valor , TextBox cantidad , TextBox total)
+        {
+            if (cantidad.Text == ".") { cantidad.Text = ""; }
+
+            if (!string.IsNullOrEmpty(cantidad.Text))
+            {
+                valorf = float.Parse(valor.Text);
+                cantf = float.Parse(cantidad.Text);
+                totalf = valorf * cantf;
+                total.Text = totalf.ToString();
+            }
+            Suma();
+
+        }
 
         private void Suma()
         {

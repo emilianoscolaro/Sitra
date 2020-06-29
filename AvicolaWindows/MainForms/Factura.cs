@@ -239,7 +239,8 @@ namespace AvicolaWindows
             Val10.Text = val10;
             Val11.Text = val11;
             Val12.Text = val12;
-            TotalTxt.Text = "AR$." + total;
+            float totalf = float.Parse(total);
+            TotalTxt.Text = "AR$." +string.Format("{0:0,0}", totalf) ;
 
         }
 
