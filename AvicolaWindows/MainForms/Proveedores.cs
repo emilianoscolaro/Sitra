@@ -1,4 +1,5 @@
 ﻿using AvicolaWindows.EditForms;
+using AvicolaWindows.MainForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -57,15 +58,37 @@ namespace AvicolaWindows
 
             if (!string.IsNullOrEmpty(id))
             {
+                DetalleCuenta detalle = new DetalleCuenta(alias);
+                detalle.Show();
+            }
+            else { MessageBox.Show("Debe seleccionar un cliente"); }
+        }
+
+        private void ExelBtn_Click(object sender, EventArgs e)
+        {
+            ExportarExel(DtClientes, "Proveedores");
+        }
+
+
+
+        private void EditaBtn_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(id))
+            {
                 EditarClientes ed = new EditarClientes(tipo, id, alias, nombre, apellido, local, direc, email, tel, cuit);
                 ed.Show();
             }
             else { MessageBox.Show("Debe seleccionar un Proveedor"); }
         }
 
-        private void ExelBtn_Click(object sender, EventArgs e)
+        private void EditaBtn_MouseEnter(object sender, EventArgs e)
         {
-            ExportarExel(DtClientes, "Proveedores");
+            EditaBtn.Size = EditaBtn.Size + new Size(14, 4);
+        }
+
+        private void EditaBtn_MouseLeave(object sender, EventArgs e)
+        {
+            EditaBtn.Size = EditaBtn.Size - new Size(14, 4);
         }
 
         private void BuscarTxt_MouseDown(object sender, MouseEventArgs e)
@@ -104,10 +127,10 @@ namespace AvicolaWindows
         {
             if (!string.IsNullOrEmpty(id))
             {
-                EditarClientes ed = new EditarClientes(tipo, id, alias, nombre, apellido, local, direc, email, tel, cuit);
-                ed.Show();
+                DetalleCuenta detalle = new DetalleCuenta(alias);
+                detalle.Show();
             }
-            else { MessageBox.Show("Debe seleccionar un Proveedor"); }
+            else { MessageBox.Show("Debe seleccionar un cliente"); }
         }
 
         private void EliminarBtn_Click(object sender, EventArgs e)

@@ -25,7 +25,7 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ProductName>Sitra</ProductName>
     <PublisherName>Emiliano Scolaro</PublisherName>
-    <ApplicationRevision>6</ApplicationRevision>
+    <ApplicationRevision>7</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -157,6 +157,12 @@
     <Compile Include="EditForms\EditarUsuarios.Designer.cs">
       <DependentUpon>EditarUsuarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="MainForms\DetalleCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\DetalleCuenta.Designer.cs">
+      <DependentUpon>DetalleCuenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForms\Factura.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -258,6 +264,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EditForms\EditarUsuarios.resx">
       <DependentUpon>EditarUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\DetalleCuenta.resx">
+      <DependentUpon>DetalleCuenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForms\Explorador.resx">
       <DependentUpon>Explorador.cs</DependentUpon>
@@ -379,6 +388,7 @@
     <None Include="Resources\AvicolaLogo.png" />
     <None Include="Resources\AvicolaLogoBlanco.png" />
     <Content Include="icono.ico" />
+    <None Include="Resources\EditBtn.png" />
     <Content Include="Resources\edit_4218.png" />
     <None Include="Resources\EliminarBtn.png" />
     <Content Include="Resources\embryo-544192_1920.jpg" />

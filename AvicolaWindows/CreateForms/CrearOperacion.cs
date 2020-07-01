@@ -38,7 +38,8 @@ namespace AvicolaWindows
             StartValues();
 
             FechaTxt.Text = DateTime.Now.ToShortDateString();
-            TituloTxt.Text = "Operacion " + _tipo;
+            if (_tipo == "Cliente") { TituloTxt.Text = "Operacion Venta"; } else { TituloTxt.Text = "Operacion Compra"; }
+            
             NombreTxt.Text = _cliente;
 
 
