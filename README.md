@@ -13,3 +13,7 @@ clients and providers beads
 ![Cobranzas](https://user-images.githubusercontent.com/55861460/85338293-60d86d00-b4b8-11ea-9740-cb0306ae55ee.png)
 ![NuevoPago](https://user-images.githubusercontent.com/55861460/85338295-62a23080-b4b8-11ea-9c78-1be49c527e62.png)
 ![Factura](https://user-images.githubusercontent.com/55861460/85338300-659d2100-b4b8-11ea-99aa-63303a9e31ed.png)
+
+Client movement details
+
+![DetalleCuenta](https://user-images.githubusercontent.com/55861460/86407984-7c97fc00-bc8c-11ea-85ac-ad6d3d7b2d0c.png)
