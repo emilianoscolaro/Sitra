@@ -48,56 +48,66 @@
             // label4
             // 
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(132, 177);
-            this.label4.Size = new System.Drawing.Size(93, 29);
+            this.label4.Location = new System.Drawing.Point(88, 115);
+            this.label4.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label4.Size = new System.Drawing.Size(62, 20);
             this.label4.Text = "Articulo";
             // 
             // BuscarTxt
             // 
-            this.BuscarTxt.Location = new System.Drawing.Point(241, 175);
+            this.BuscarTxt.Location = new System.Drawing.Point(161, 114);
+            this.BuscarTxt.Margin = new System.Windows.Forms.Padding(1);
             this.BuscarTxt.KeyUp += new System.Windows.Forms.KeyEventHandler(this.BuscarTxt_KeyUp);
             this.BuscarTxt.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BuscarTxt_MouseDown);
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(160, 53);
-            this.label1.Size = new System.Drawing.Size(256, 58);
+            this.label1.Location = new System.Drawing.Point(107, 34);
+            this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label1.Size = new System.Drawing.Size(177, 39);
             this.label1.Text = "Inventario";
             // 
             // Seleccionado
             // 
             this.Seleccionado.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.Seleccionado.Location = new System.Drawing.Point(1303, 398);
+            this.Seleccionado.Location = new System.Drawing.Point(869, 259);
+            this.Seleccionado.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             // 
             // VerBtn
             // 
-            this.VerBtn.Location = new System.Drawing.Point(1158, 539);
+            this.VerBtn.Location = new System.Drawing.Point(772, 350);
+            this.VerBtn.Margin = new System.Windows.Forms.Padding(1);
             this.VerBtn.Visible = false;
             // 
             // EliminarBtn
             // 
-            this.EliminarBtn.Location = new System.Drawing.Point(1012, 729);
+            this.EliminarBtn.Location = new System.Drawing.Point(675, 474);
+            this.EliminarBtn.Margin = new System.Windows.Forms.Padding(1);
             this.EliminarBtn.Click += new System.EventHandler(this.EliminarBtn_Click);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(1157, 166);
-            this.pictureBox1.Size = new System.Drawing.Size(50, 40);
+            this.pictureBox1.Location = new System.Drawing.Point(771, 108);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(1);
+            this.pictureBox1.Size = new System.Drawing.Size(33, 26);
             this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
             this.pictureBox1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseUp);
             // 
             // pictureBox9
             // 
-            this.pictureBox9.Location = new System.Drawing.Point(241, 209);
+            this.pictureBox9.Location = new System.Drawing.Point(161, 136);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(1);
             // 
             // NuevaOpBtn
             // 
-            this.NuevaOpBtn.Location = new System.Drawing.Point(1212, 445);
+            this.NuevaOpBtn.Location = new System.Drawing.Point(808, 289);
+            this.NuevaOpBtn.Margin = new System.Windows.Forms.Padding(1);
             this.NuevaOpBtn.Visible = false;
             // 
             // FacturaBtn
             // 
-            this.FacturaBtn.Location = new System.Drawing.Point(1177, 620);
+            this.FacturaBtn.Location = new System.Drawing.Point(785, 403);
+            this.FacturaBtn.Margin = new System.Windows.Forms.Padding(1);
             this.FacturaBtn.Visible = false;
             // 
             // ExelBtn
@@ -142,7 +152,8 @@
             this.DtClientes.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.DtClientes.EnableHeadersVisualStyles = false;
             this.DtClientes.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.DtClientes.Location = new System.Drawing.Point(91, 237);
+            this.DtClientes.Location = new System.Drawing.Point(61, 154);
+            this.DtClientes.Margin = new System.Windows.Forms.Padding(2);
             this.DtClientes.MultiSelect = false;
             this.DtClientes.Name = "DtClientes";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -162,7 +173,7 @@
             this.DtClientes.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
             this.DtClientes.RowTemplate.Height = 28;
             this.DtClientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DtClientes.Size = new System.Drawing.Size(1154, 500);
+            this.DtClientes.Size = new System.Drawing.Size(769, 325);
             this.DtClientes.TabIndex = 0;
             this.DtClientes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DtClientes_CellClick);
             // 
@@ -171,20 +182,22 @@
             this.pictureBox6.BackColor = System.Drawing.Color.White;
             this.pictureBox6.BackgroundImage = global::AvicolaWindows.Properties.Resources.pngocean8;
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox6.Location = new System.Drawing.Point(38, 35);
+            this.pictureBox6.Location = new System.Drawing.Point(25, 23);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(83, 76);
+            this.pictureBox6.Size = new System.Drawing.Size(55, 49);
             this.pictureBox6.TabIndex = 87;
             this.pictureBox6.TabStop = false;
             // 
             // Inventario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::AvicolaWindows.Properties.Resources.FondoUno;
-            this.ClientSize = new System.Drawing.Size(1378, 854);
+            this.ClientSize = new System.Drawing.Size(913, 487);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.DtClientes);
+            this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "Inventario";
             this.Text = "Inventario";
             this.Load += new System.EventHandler(this.Inventario_Load);

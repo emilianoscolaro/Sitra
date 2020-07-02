@@ -274,7 +274,7 @@ namespace AvicolaWindows
             {
                 total += Convert.ToDouble(row.Cells["Importe"].Value);
             }
-            TotalTkt.Text = "AR$." + Convert.ToString(total);
+            TotalTkt.Text = "AR$ " + string.Format("{0:n}", total);
 
         }
 

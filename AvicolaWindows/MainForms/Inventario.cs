@@ -69,6 +69,21 @@ namespace AvicolaWindows
             ExportarExel(DtClientes, "Inventario");
         }
 
+
+        // Cambiar Color Stock
+       // private void DtClientes_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+       // {
+       //     if (this.DtClientes.Columns[e.ColumnIndex].Name == "Stock")
+       //     {
+       //         if(Convert.ToInt32(e.Value) <= 30)
+       //         {
+       //             e.CellStyle.ForeColor = Color.Red;
+       //         }
+       //     }
+       // }
+
+       
+
         private void BuscarTxt_KeyUp(object sender, KeyEventArgs e)
         {
             Buscar(BuscarTxt, "Inventario", "Articulo", DtClientes);
