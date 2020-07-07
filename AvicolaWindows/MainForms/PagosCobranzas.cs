@@ -22,7 +22,7 @@ namespace AvicolaWindows
         }
 
 
-        string cliente;
+        string cliente,forma;
         string id,_usrlvl;
         string total;
         string observaciones;
@@ -64,6 +64,7 @@ namespace AvicolaWindows
         private void DtClientes_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             cliente = Seleccionar(cliente, DtClientes, 3);
+            forma = Seleccionar(forma, DtClientes, 4);
             id = Seleccionar(id, DtClientes, 0);
             total = Seleccionar(total, DtClientes, 5);
             observaciones = Seleccionar(observaciones, DtClientes, 6);

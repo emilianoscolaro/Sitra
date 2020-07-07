@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AvicolaWindows.EditForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,7 +19,7 @@ namespace AvicolaWindows
             _usrlvl = usrlvl;
         }
 
-        string stock,id,_usrlvl;
+        string stock,id,_usrlvl,descripcion,articulo;
 
         private void BuscarBtn_Click(object sender, EventArgs e)
         {
@@ -55,8 +56,11 @@ namespace AvicolaWindows
 
         private void DtClientes_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            id = Seleccionar(stock, DtClientes, 0);
+            id = Seleccionar(id, DtClientes, 0);
+            articulo = Seleccionar(articulo, DtClientes, 1);
             stock = Seleccionar(stock, DtClientes, 3);
+            descripcion = Seleccionar(descripcion, DtClientes, 2);
+
         }
 
         private void BuscarTxt_MouseDown(object sender, MouseEventArgs e)
@@ -69,20 +73,32 @@ namespace AvicolaWindows
             ExportarExel(DtClientes, "Inventario");
         }
 
+        private void VerBtn_Click(object sender, EventArgs e)
+        {
+            EditInventario ed = new EditInventario(id,descripcion,articulo);
+            ed.Show();
+        }
+
+        private void DtClientes_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            EditInventario ed = new EditInventario(id,descripcion,articulo);
+            ed.Show();
+        }
+
 
         // Cambiar Color Stock
-       // private void DtClientes_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
-       // {
-       //     if (this.DtClientes.Columns[e.ColumnIndex].Name == "Stock")
-       //     {
-       //         if(Convert.ToInt32(e.Value) <= 30)
-       //         {
-       //             e.CellStyle.ForeColor = Color.Red;
-       //         }
-       //     }
-       // }
+        // private void DtClientes_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        // {
+        //     if (this.DtClientes.Columns[e.ColumnIndex].Name == "Stock")
+        //     {
+        //         if(Convert.ToInt32(e.Value) <= 30)
+        //         {
+        //             e.CellStyle.ForeColor = Color.Red;
+        //         }
+        //     }
+        // }
 
-       
+
 
         private void BuscarTxt_KeyUp(object sender, KeyEventArgs e)
         {

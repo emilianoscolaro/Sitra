@@ -55,54 +55,64 @@
             // label4
             // 
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(378, 177);
-            this.label4.Size = new System.Drawing.Size(92, 29);
+            this.label4.Location = new System.Drawing.Point(252, 115);
+            this.label4.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label4.Size = new System.Drawing.Size(61, 20);
             this.label4.Text = "usuario";
             // 
             // BuscarTxt
             // 
-            this.BuscarTxt.Location = new System.Drawing.Point(487, 175);
+            this.BuscarTxt.Location = new System.Drawing.Point(325, 114);
+            this.BuscarTxt.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.BuscarTxt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.BuscarTxt_KeyPress);
             this.BuscarTxt.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BuscarTxt_MouseDown);
             // 
             // label1
             // 
-            this.label1.Size = new System.Drawing.Size(231, 58);
+            this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label1.Size = new System.Drawing.Size(160, 39);
             this.label1.Text = "Usuarios";
             // 
             // Seleccionado
             // 
-            this.Seleccionado.Location = new System.Drawing.Point(1324, 362);
+            this.Seleccionado.Location = new System.Drawing.Point(883, 235);
+            this.Seleccionado.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             // 
             // VerBtn
             // 
-            this.VerBtn.Location = new System.Drawing.Point(91, 729);
+            this.VerBtn.Location = new System.Drawing.Point(61, 474);
+            this.VerBtn.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.VerBtn.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // EliminarBtn
             // 
-            this.EliminarBtn.Location = new System.Drawing.Point(1081, 729);
+            this.EliminarBtn.Location = new System.Drawing.Point(721, 474);
+            this.EliminarBtn.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.EliminarBtn.Click += new System.EventHandler(this.EliminarBtn_Click_1);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(1120, 171);
-            this.pictureBox1.Size = new System.Drawing.Size(50, 40);
+            this.pictureBox1.Location = new System.Drawing.Point(747, 111);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.pictureBox1.Size = new System.Drawing.Size(33, 26);
             this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
             this.pictureBox1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseUp);
             // 
             // pictureBox9
             // 
-            this.pictureBox9.Location = new System.Drawing.Point(487, 209);
+            this.pictureBox9.Location = new System.Drawing.Point(325, 136);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             // 
             // NuevaOpBtn
             // 
-            this.NuevaOpBtn.Location = new System.Drawing.Point(1120, 595);
+            this.NuevaOpBtn.Location = new System.Drawing.Point(747, 387);
+            this.NuevaOpBtn.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.NuevaOpBtn.Visible = false;
             // 
             // FacturaBtn
             // 
-            this.FacturaBtn.Location = new System.Drawing.Point(1140, 497);
+            this.FacturaBtn.Location = new System.Drawing.Point(760, 323);
+            this.FacturaBtn.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.FacturaBtn.Visible = false;
             // 
             // ExelBtn
@@ -188,7 +198,7 @@
             this.DTUsuarios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DTUsuarios.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
             this.DTUsuarios.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.DTUsuarios.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.DTUsuarios.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal;
             this.DTUsuarios.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -210,7 +220,8 @@
             this.DTUsuarios.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.DTUsuarios.EnableHeadersVisualStyles = false;
             this.DTUsuarios.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.DTUsuarios.Location = new System.Drawing.Point(91, 237);
+            this.DTUsuarios.Location = new System.Drawing.Point(61, 154);
+            this.DTUsuarios.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DTUsuarios.MultiSelect = false;
             this.DTUsuarios.Name = "DTUsuarios";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -231,7 +242,7 @@
             this.DTUsuarios.RowTemplate.Height = 28;
             this.DTUsuarios.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.DTUsuarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DTUsuarios.Size = new System.Drawing.Size(1154, 486);
+            this.DTUsuarios.Size = new System.Drawing.Size(769, 316);
             this.DTUsuarios.TabIndex = 19;
             this.DTUsuarios.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DTUsuarios_CellClick);
             this.DTUsuarios.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DTUsuarios_CellDoubleClick);
@@ -242,9 +253,10 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox1.ForeColor = System.Drawing.Color.White;
-            this.checkBox1.Location = new System.Drawing.Point(778, 175);
+            this.checkBox1.Location = new System.Drawing.Point(519, 114);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(150, 29);
+            this.checkBox1.Size = new System.Drawing.Size(107, 21);
             this.checkBox1.TabIndex = 21;
             this.checkBox1.Text = "Contraseñas";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -252,12 +264,13 @@
             // 
             // Usuarios
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.ClientSize = new System.Drawing.Size(1378, 854);
+            this.ClientSize = new System.Drawing.Size(913, 487);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.DTUsuarios);
+            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.Name = "Usuarios";
             this.Text = "Usuarios";
             this.Load += new System.EventHandler(this.Usuarios_Load);

@@ -12,6 +12,7 @@ using System.Runtime.InteropServices;
 using AvicolaWindows.Base;
 using AvicolaWindows.Data;
 using AvicolaWindows.EditForms;
+using AvicolaWindows.MainForms;
 
 namespace AvicolaWindows
 {
@@ -450,7 +451,14 @@ namespace AvicolaWindows
             BarBlackColor();
         }
 
-
+        private void ChequesBtn_Click(object sender, EventArgs e)
+        {
+            tipo = "Cheques";
+            OpenChildForm(new Cheques( _usrNivel));
+            NuevoBtn.Visible = true;
+            BackBtn.Visible = false;
+            BarWhiteColor();
+        }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {

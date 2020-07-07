@@ -38,15 +38,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.ExelBtn = new System.Windows.Forms.Button();
+            this.CuentaTotalTxt = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.DtCuenta = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.CuentaTotalTxt = new System.Windows.Forms.Label();
-            this.ExelBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel2.SuspendLayout();
@@ -120,6 +120,52 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(817, 623);
             this.panel2.TabIndex = 1;
+            // 
+            // ExelBtn
+            // 
+            this.ExelBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ExelBtn.BackColor = System.Drawing.Color.Transparent;
+            this.ExelBtn.BackgroundImage = global::AvicolaWindows.Properties.Resources.ExeIcon;
+            this.ExelBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ExelBtn.FlatAppearance.BorderSize = 0;
+            this.ExelBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.ExelBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.ExelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ExelBtn.Location = new System.Drawing.Point(737, 13);
+            this.ExelBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.ExelBtn.Name = "ExelBtn";
+            this.ExelBtn.Size = new System.Drawing.Size(35, 36);
+            this.ExelBtn.TabIndex = 90;
+            this.ExelBtn.UseVisualStyleBackColor = false;
+            this.ExelBtn.Click += new System.EventHandler(this.ExelBtn_Click);
+            this.ExelBtn.MouseEnter += new System.EventHandler(this.ExelBtn_MouseEnter);
+            this.ExelBtn.MouseLeave += new System.EventHandler(this.ExelBtn_MouseLeave);
+            // 
+            // CuentaTotalTxt
+            // 
+            this.CuentaTotalTxt.AutoSize = true;
+            this.CuentaTotalTxt.BackColor = System.Drawing.Color.White;
+            this.CuentaTotalTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CuentaTotalTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.CuentaTotalTxt.Location = new System.Drawing.Point(606, 513);
+            this.CuentaTotalTxt.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.CuentaTotalTxt.Name = "CuentaTotalTxt";
+            this.CuentaTotalTxt.Size = new System.Drawing.Size(137, 25);
+            this.CuentaTotalTxt.TabIndex = 89;
+            this.CuentaTotalTxt.Text = "Cuenta Total";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(171)))), ((int)(((byte)(115)))));
+            this.label2.Location = new System.Drawing.Point(412, 513);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(137, 25);
+            this.label2.TabIndex = 88;
+            this.label2.Text = "Cuenta Total";
             // 
             // DtCuenta
             // 
@@ -257,60 +303,16 @@
             this.label7.TabIndex = 82;
             this.label7.Text = "Hasta";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(171)))), ((int)(((byte)(115)))));
-            this.label2.Location = new System.Drawing.Point(412, 513);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(137, 25);
-            this.label2.TabIndex = 88;
-            this.label2.Text = "Cuenta Total";
-            // 
-            // CuentaTotalTxt
-            // 
-            this.CuentaTotalTxt.AutoSize = true;
-            this.CuentaTotalTxt.BackColor = System.Drawing.Color.White;
-            this.CuentaTotalTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CuentaTotalTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.CuentaTotalTxt.Location = new System.Drawing.Point(606, 513);
-            this.CuentaTotalTxt.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.CuentaTotalTxt.Name = "CuentaTotalTxt";
-            this.CuentaTotalTxt.Size = new System.Drawing.Size(137, 25);
-            this.CuentaTotalTxt.TabIndex = 89;
-            this.CuentaTotalTxt.Text = "Cuenta Total";
-            // 
-            // ExelBtn
-            // 
-            this.ExelBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.ExelBtn.BackColor = System.Drawing.Color.Transparent;
-            this.ExelBtn.BackgroundImage = global::AvicolaWindows.Properties.Resources.ExeIcon;
-            this.ExelBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ExelBtn.FlatAppearance.BorderSize = 0;
-            this.ExelBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.ExelBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.ExelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ExelBtn.Location = new System.Drawing.Point(737, 13);
-            this.ExelBtn.Margin = new System.Windows.Forms.Padding(2);
-            this.ExelBtn.Name = "ExelBtn";
-            this.ExelBtn.Size = new System.Drawing.Size(35, 36);
-            this.ExelBtn.TabIndex = 90;
-            this.ExelBtn.UseVisualStyleBackColor = false;
-            this.ExelBtn.Click += new System.EventHandler(this.ExelBtn_Click);
-            this.ExelBtn.MouseEnter += new System.EventHandler(this.ExelBtn_MouseEnter);
-            this.ExelBtn.MouseLeave += new System.EventHandler(this.ExelBtn_MouseLeave);
-            // 
             // DetalleCuenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(817, 723);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "DetalleCuenta";
+            this.Opacity = 0.95D;
             this.Text = "DetalleCuenta";
             this.Load += new System.EventHandler(this.DetalleCuenta_Load);
             this.panel1.ResumeLayout(false);

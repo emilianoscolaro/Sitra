@@ -75,13 +75,15 @@
             // 
             // VerBtn
             // 
-            this.VerBtn.Location = new System.Drawing.Point(772, 350);
+            this.VerBtn.BackgroundImage = global::AvicolaWindows.Properties.Resources.EditBtn;
+            this.VerBtn.Location = new System.Drawing.Point(114, 516);
             this.VerBtn.Margin = new System.Windows.Forms.Padding(1);
             this.VerBtn.Visible = false;
+            this.VerBtn.Click += new System.EventHandler(this.VerBtn_Click);
             // 
             // EliminarBtn
             // 
-            this.EliminarBtn.Location = new System.Drawing.Point(675, 474);
+            this.EliminarBtn.Location = new System.Drawing.Point(675, 516);
             this.EliminarBtn.Margin = new System.Windows.Forms.Padding(1);
             this.EliminarBtn.Click += new System.EventHandler(this.EliminarBtn_Click);
             // 
@@ -100,13 +102,13 @@
             // 
             // NuevaOpBtn
             // 
-            this.NuevaOpBtn.Location = new System.Drawing.Point(808, 289);
+            this.NuevaOpBtn.Location = new System.Drawing.Point(808, 331);
             this.NuevaOpBtn.Margin = new System.Windows.Forms.Padding(1);
             this.NuevaOpBtn.Visible = false;
             // 
             // FacturaBtn
             // 
-            this.FacturaBtn.Location = new System.Drawing.Point(785, 403);
+            this.FacturaBtn.Location = new System.Drawing.Point(785, 445);
             this.FacturaBtn.Margin = new System.Windows.Forms.Padding(1);
             this.FacturaBtn.Visible = false;
             // 
@@ -130,7 +132,7 @@
             this.DtClientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DtClientes.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
             this.DtClientes.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.DtClientes.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.DtClientes.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SunkenHorizontal;
             this.DtClientes.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -176,6 +178,7 @@
             this.DtClientes.Size = new System.Drawing.Size(769, 325);
             this.DtClientes.TabIndex = 0;
             this.DtClientes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DtClientes_CellClick);
+            this.DtClientes.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DtClientes_CellDoubleClick);
             // 
             // pictureBox6
             // 
@@ -194,7 +197,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::AvicolaWindows.Properties.Resources.FondoUno;
-            this.ClientSize = new System.Drawing.Size(913, 487);
+            this.ClientSize = new System.Drawing.Size(913, 570);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.DtClientes);
             this.Margin = new System.Windows.Forms.Padding(1);
