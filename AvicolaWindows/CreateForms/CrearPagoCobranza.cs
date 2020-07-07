@@ -171,7 +171,7 @@ namespace AvicolaWindows
                 Destinado.DataSource = Utilidades.EjecutaListPagosCob("LlenarComboProvedores");
                 Destinado.DisplayMember = "Alias";
                 if(_tipo == "Pagos") { NuevoChequeTxt.ForeColor = Color.Gray;CarCheuqeTxt.ForeColor = Color.Teal; ChequeBox.DataSource = Utilidades.EjecutaListPagosCob("LlenarCoboCheque");
-                    ChequeBox.DisplayMember = "ID"; PagarConChequeRestrincion();
+                    ChequeBox.DisplayMember = "ID"; PagarConChequeRestrincion();Destinado.Text = ClienteProvBox.Text;
                 }
                 if(_tipo == "Cobranzas") { NuevoChequeTxt.ForeColor = Color.Teal; CarCheuqeTxt.ForeColor = Color.Gray; ChequeBox.Enabled = false;
                     Recibido.Text = ClienteProvBox.Text;
@@ -420,6 +420,11 @@ namespace AvicolaWindows
             {
                 Destinado.Text = ClienteProvBox.Text;
             }
+            if (_tipo == "Cobranzas")
+            {
+                Recibido.Text = ClienteProvBox.Text;
+            }
+
         }
 
         private string FormaDePago()

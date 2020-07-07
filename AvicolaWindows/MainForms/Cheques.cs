@@ -118,7 +118,7 @@ namespace AvicolaWindows.MainForms
         private void LoadGrid()
         {
             DtClientes.DataSource = LlenarDataGrid("Cheques").Tables[0];
-            //this.DtClientes.Columns["Numero"].Visible = false;
+            this.DtClientes.Columns["Numero"].Visible = false;
             DtClientes.Columns[0].Width = 60;
             DtClientes.Sort(DtClientes.Columns[0], ListSortDirection.Descending);
         }
