@@ -189,7 +189,7 @@
             this.ChequesBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ChequesBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ChequesBtn.ForeColor = System.Drawing.Color.Black;
-            this.ChequesBtn.Location = new System.Drawing.Point(0, 32);
+            this.ChequesBtn.Location = new System.Drawing.Point(0, 0);
             this.ChequesBtn.Margin = new System.Windows.Forms.Padding(2);
             this.ChequesBtn.Name = "ChequesBtn";
             this.ChequesBtn.Padding = new System.Windows.Forms.Padding(33, 0, 7, 0);
@@ -204,14 +204,14 @@
             // 
             this.CobranzasBtn.BackColor = System.Drawing.Color.Transparent;
             this.CobranzasBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.CobranzasBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.CobranzasBtn.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.CobranzasBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.CobranzasBtn.FlatAppearance.BorderSize = 0;
             this.CobranzasBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.CobranzasBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CobranzasBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CobranzasBtn.ForeColor = System.Drawing.Color.Black;
-            this.CobranzasBtn.Location = new System.Drawing.Point(0, 0);
+            this.CobranzasBtn.Location = new System.Drawing.Point(0, 35);
             this.CobranzasBtn.Margin = new System.Windows.Forms.Padding(2);
             this.CobranzasBtn.Name = "CobranzasBtn";
             this.CobranzasBtn.Padding = new System.Windows.Forms.Padding(33, 0, 7, 0);

@@ -455,7 +455,7 @@ namespace AvicolaWindows
         {
             tipo = "Cheques";
             OpenChildForm(new Cheques( _usrNivel));
-            NuevoBtn.Visible = true;
+            NuevoBtn.Visible = false;
             BackBtn.Visible = false;
             BarWhiteColor();
         }

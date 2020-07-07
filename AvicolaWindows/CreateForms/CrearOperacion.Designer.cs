@@ -447,7 +447,7 @@
             this.l10.BackColor = System.Drawing.Color.Transparent;
             this.l10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l10.ForeColor = System.Drawing.Color.Black;
-            this.l10.Location = new System.Drawing.Point(21, 657);
+            this.l10.Location = new System.Drawing.Point(21, 875);
             this.l10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.l10.Name = "l10";
             this.l10.Size = new System.Drawing.Size(31, 17);
@@ -1406,7 +1406,7 @@
             this.CrearBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CrearBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CrearBtn.ForeColor = System.Drawing.Color.White;
-            this.CrearBtn.Location = new System.Drawing.Point(401, 505);
+            this.CrearBtn.Location = new System.Drawing.Point(419, 473);
             this.CrearBtn.Margin = new System.Windows.Forms.Padding(2);
             this.CrearBtn.Name = "CrearBtn";
             this.CrearBtn.Size = new System.Drawing.Size(284, 40);
@@ -1482,7 +1482,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(913, 487);
+            this.ClientSize = new System.Drawing.Size(913, 566);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.ObservacionesTxt);
