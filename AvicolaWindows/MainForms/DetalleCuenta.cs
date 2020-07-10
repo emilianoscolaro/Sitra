@@ -31,10 +31,16 @@ namespace AvicolaWindows.MainForms
         {
             ClienteTxt.Text = _cliente;
             DtCuenta.DataSource = LlenarGrid().Tables[0];
+            LoadGrid();
             Suma();
         }
 
-        
+        private void LoadGrid()
+        {
+            DtCuenta.Columns[0].Width = 80;
+            DtCuenta.Columns[3].Width = 60;
+            this.DtCuenta.Columns["Cuenta"].Visible = false;
+        }
 
 
         private DataSet LlenarGrid()
@@ -72,12 +78,14 @@ namespace AvicolaWindows.MainForms
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
             BuscarPorFecha(dateTimePicker1,dateTimePicker2);
+            LoadGrid();
             Suma();
         }
 
         private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
         {
             BuscarPorFecha(dateTimePicker1, dateTimePicker2);
+            LoadGrid();
             Suma();
         }
 
@@ -164,6 +172,17 @@ namespace AvicolaWindows.MainForms
         private void ExelBtn_MouseEnter(object sender, EventArgs e)
         {
             ExelBtn.Size = ExelBtn.Size + new Size(5, 5);
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked == true) { this.DtCuenta.Columns["Cuenta"].Visible = true; }
+            if (checkBox1.Checked == false) { this.DtCuenta.Columns["Cuenta"].Visible = false; }
+        }
+
+        private void DtCuenta_ColumnHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            Suma();
         }
 
         private void ExelBtn_MouseLeave(object sender, EventArgs e)
