@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.DtClientes = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -40,7 +40,6 @@
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.BuscarUsr = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -50,6 +49,10 @@
             this.label8 = new System.Windows.Forms.Label();
             this.TotalTkt = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.BuscarObser = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.VerBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EliminarBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -58,10 +61,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.FacturaBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DtClientes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // label4
@@ -77,7 +80,7 @@
             // 
             this.BuscarTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BuscarTxt.Location = new System.Drawing.Point(104, 114);
-            this.BuscarTxt.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.BuscarTxt.Margin = new System.Windows.Forms.Padding(1);
             this.BuscarTxt.Size = new System.Drawing.Size(94, 16);
             this.BuscarTxt.KeyUp += new System.Windows.Forms.KeyEventHandler(this.BuscarTxt_KeyUp);
             this.BuscarTxt.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BuscarTxt_MouseDown);
@@ -92,19 +95,19 @@
             // VerBtn
             // 
             this.VerBtn.Location = new System.Drawing.Point(279, 320);
-            this.VerBtn.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.VerBtn.Margin = new System.Windows.Forms.Padding(1);
             this.VerBtn.Visible = false;
             // 
             // EliminarBtn
             // 
             this.EliminarBtn.Location = new System.Drawing.Point(717, 483);
-            this.EliminarBtn.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.EliminarBtn.Margin = new System.Windows.Forms.Padding(1);
             this.EliminarBtn.Click += new System.EventHandler(this.EliminarBtn_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(777, 132);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox1.Size = new System.Drawing.Size(33, 26);
             this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
             this.pictureBox1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseUp);
@@ -112,19 +115,19 @@
             // pictureBox9
             // 
             this.pictureBox9.Location = new System.Drawing.Point(95, 133);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox9.Size = new System.Drawing.Size(100, 1);
             // 
             // NuevaOpBtn
             // 
             this.NuevaOpBtn.Location = new System.Drawing.Point(499, 320);
-            this.NuevaOpBtn.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.NuevaOpBtn.Margin = new System.Windows.Forms.Padding(1);
             this.NuevaOpBtn.Visible = false;
             // 
             // FacturaBtn
             // 
             this.FacturaBtn.Location = new System.Drawing.Point(57, 483);
-            this.FacturaBtn.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.FacturaBtn.Margin = new System.Windows.Forms.Padding(1);
             this.FacturaBtn.Click += new System.EventHandler(this.FacturaBtn_Click);
             // 
             // ExelBtn
@@ -133,7 +136,7 @@
             this.ExelBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.ExelBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.ExelBtn.Location = new System.Drawing.Point(842, 125);
-            this.ExelBtn.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.ExelBtn.Margin = new System.Windows.Forms.Padding(1);
             this.ExelBtn.Click += new System.EventHandler(this.ExelBtn_Click);
             // 
             // DtClientes
@@ -142,52 +145,52 @@
             this.DtClientes.AllowUserToDeleteRows = false;
             this.DtClientes.AllowUserToResizeColumns = false;
             this.DtClientes.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DimGray;
-            this.DtClientes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.DimGray;
+            this.DtClientes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
             this.DtClientes.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.DtClientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DtClientes.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
             this.DtClientes.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DtClientes.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SunkenHorizontal;
             this.DtClientes.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DtClientes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DtClientes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.DtClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Turquoise;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DtClientes.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Turquoise;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DtClientes.DefaultCellStyle = dataGridViewCellStyle8;
             this.DtClientes.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.DtClientes.EnableHeadersVisualStyles = false;
             this.DtClientes.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
             this.DtClientes.Location = new System.Drawing.Point(57, 182);
-            this.DtClientes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DtClientes.Margin = new System.Windows.Forms.Padding(2);
             this.DtClientes.MultiSelect = false;
             this.DtClientes.Name = "DtClientes";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.DarkGray;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DtClientes.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.DarkGray;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DtClientes.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.DtClientes.RowHeadersVisible = false;
             this.DtClientes.RowHeadersWidth = 62;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.DarkGray;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.DarkSlateGray;
-            this.DtClientes.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.DarkGray;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.DarkSlateGray;
+            this.DtClientes.RowsDefaultCellStyle = dataGridViewCellStyle10;
             this.DtClientes.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
             this.DtClientes.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
             this.DtClientes.RowTemplate.Height = 28;
@@ -204,7 +207,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(150, 146);
+            this.label6.Location = new System.Drawing.Point(54, 146);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(52, 17);
@@ -218,7 +221,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(257, 147);
+            this.label5.Location = new System.Drawing.Point(136, 146);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(49, 17);
@@ -244,10 +247,10 @@
             this.dateTimePicker2.CalendarTitleForeColor = System.Drawing.Color.White;
             this.dateTimePicker2.CalendarTrailingForeColor = System.Drawing.Color.White;
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(604, 146);
-            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimePicker2.Location = new System.Drawing.Point(381, 145);
+            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(135, 20);
+            this.dateTimePicker2.Size = new System.Drawing.Size(100, 20);
             this.dateTimePicker2.TabIndex = 78;
             this.dateTimePicker2.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
             // 
@@ -260,10 +263,10 @@
             this.dateTimePicker1.CalendarTitleForeColor = System.Drawing.Color.White;
             this.dateTimePicker1.CalendarTrailingForeColor = System.Drawing.Color.White;
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(346, 146);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimePicker1.Location = new System.Drawing.Point(203, 145);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(135, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(100, 20);
             this.dateTimePicker1.TabIndex = 77;
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
@@ -274,30 +277,19 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(515, 146);
+            this.label7.Location = new System.Drawing.Point(323, 146);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(45, 17);
             this.label7.TabIndex = 76;
             this.label7.Text = "Hasta";
             // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox5.BackColor = System.Drawing.Color.White;
-            this.pictureBox5.Location = new System.Drawing.Point(597, 166);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(149, 1);
-            this.pictureBox5.TabIndex = 75;
-            this.pictureBox5.TabStop = false;
-            // 
             // pictureBox3
             // 
             this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox3.BackColor = System.Drawing.Color.White;
             this.pictureBox3.Location = new System.Drawing.Point(339, 133);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(149, 1);
             this.pictureBox3.TabIndex = 74;
@@ -311,7 +303,7 @@
             this.BuscarUsr.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BuscarUsr.ForeColor = System.Drawing.Color.White;
             this.BuscarUsr.Location = new System.Drawing.Point(339, 114);
-            this.BuscarUsr.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BuscarUsr.Margin = new System.Windows.Forms.Padding(2);
             this.BuscarUsr.Name = "BuscarUsr";
             this.BuscarUsr.Size = new System.Drawing.Size(149, 16);
             this.BuscarUsr.TabIndex = 73;
@@ -351,7 +343,7 @@
             this.BuscarCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BuscarCliente.ForeColor = System.Drawing.Color.White;
             this.BuscarCliente.Location = new System.Drawing.Point(589, 115);
-            this.BuscarCliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BuscarCliente.Margin = new System.Windows.Forms.Padding(2);
             this.BuscarCliente.Name = "BuscarCliente";
             this.BuscarCliente.Size = new System.Drawing.Size(149, 16);
             this.BuscarCliente.TabIndex = 70;
@@ -407,17 +399,76 @@
             this.pictureBox6.BackgroundImage = global::AvicolaWindows.Properties.Resources.pngocean_com__1_;
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox6.Location = new System.Drawing.Point(25, 23);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(49, 49);
             this.pictureBox6.TabIndex = 88;
             this.pictureBox6.TabStop = false;
+            // 
+            // label9
+            // 
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(111, 145);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(12, 17);
+            this.label9.TabIndex = 89;
+            this.label9.Text = "|";
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox7.BackColor = System.Drawing.Color.White;
+            this.pictureBox7.Location = new System.Drawing.Point(616, 165);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(124, 1);
+            this.pictureBox7.TabIndex = 93;
+            this.pictureBox7.TabStop = false;
+            // 
+            // BuscarObser
+            // 
+            this.BuscarObser.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BuscarObser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.BuscarObser.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BuscarObser.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BuscarObser.ForeColor = System.Drawing.Color.White;
+            this.BuscarObser.Location = new System.Drawing.Point(616, 146);
+            this.BuscarObser.Margin = new System.Windows.Forms.Padding(2);
+            this.BuscarObser.Name = "BuscarObser";
+            this.BuscarObser.Size = new System.Drawing.Size(124, 16);
+            this.BuscarObser.TabIndex = 92;
+            this.BuscarObser.Text = " Buscar";
+            this.BuscarObser.KeyUp += new System.Windows.Forms.KeyEventHandler(this.BuscarObser_KeyUp);
+            this.BuscarObser.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BuscarObser_MouseDown);
+            // 
+            // label10
+            // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(496, 146);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(103, 17);
+            this.label10.TabIndex = 91;
+            this.label10.Text = "Observaciones";
             // 
             // OpProveedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(913, 487);
+            this.Controls.Add(this.pictureBox7);
+            this.Controls.Add(this.BuscarObser);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.TotalTkt);
@@ -426,27 +477,22 @@
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.BuscarUsr);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.BuscarCliente);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.DtClientes);
-            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "OpProveedores";
             this.Text = "OpProveedores";
             this.Load += new System.EventHandler(this.OpProveedores_Load);
-            this.Controls.SetChildIndex(this.ExelBtn, 0);
-            this.Controls.SetChildIndex(this.NuevaOpBtn, 0);
-            this.Controls.SetChildIndex(this.VerBtn, 0);
             this.Controls.SetChildIndex(this.DtClientes, 0);
             this.Controls.SetChildIndex(this.label2, 0);
             this.Controls.SetChildIndex(this.BuscarCliente, 0);
             this.Controls.SetChildIndex(this.label3, 0);
             this.Controls.SetChildIndex(this.BuscarUsr, 0);
             this.Controls.SetChildIndex(this.pictureBox3, 0);
-            this.Controls.SetChildIndex(this.pictureBox5, 0);
             this.Controls.SetChildIndex(this.label7, 0);
             this.Controls.SetChildIndex(this.dateTimePicker1, 0);
             this.Controls.SetChildIndex(this.dateTimePicker2, 0);
@@ -454,6 +500,11 @@
             this.Controls.SetChildIndex(this.label6, 0);
             this.Controls.SetChildIndex(this.TotalTkt, 0);
             this.Controls.SetChildIndex(this.label8, 0);
+            this.Controls.SetChildIndex(this.pictureBox6, 0);
+            this.Controls.SetChildIndex(this.label9, 0);
+            this.Controls.SetChildIndex(this.ExelBtn, 0);
+            this.Controls.SetChildIndex(this.NuevaOpBtn, 0);
+            this.Controls.SetChildIndex(this.VerBtn, 0);
             this.Controls.SetChildIndex(this.FacturaBtn, 0);
             this.Controls.SetChildIndex(this.label4, 0);
             this.Controls.SetChildIndex(this.BuscarTxt, 0);
@@ -462,7 +513,9 @@
             this.Controls.SetChildIndex(this.EliminarBtn, 0);
             this.Controls.SetChildIndex(this.pictureBox1, 0);
             this.Controls.SetChildIndex(this.pictureBox9, 0);
-            this.Controls.SetChildIndex(this.pictureBox6, 0);
+            this.Controls.SetChildIndex(this.label10, 0);
+            this.Controls.SetChildIndex(this.BuscarObser, 0);
+            this.Controls.SetChildIndex(this.pictureBox7, 0);
             ((System.ComponentModel.ISupportInitialize)(this.VerBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EliminarBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -471,10 +524,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.FacturaBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DtClientes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -489,7 +542,6 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         public System.Windows.Forms.Label label7;
-        public System.Windows.Forms.PictureBox pictureBox5;
         public System.Windows.Forms.PictureBox pictureBox3;
         public System.Windows.Forms.TextBox BuscarUsr;
         public System.Windows.Forms.Label label3;
@@ -499,5 +551,9 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label TotalTkt;
         private System.Windows.Forms.PictureBox pictureBox6;
+        public System.Windows.Forms.Label label9;
+        public System.Windows.Forms.PictureBox pictureBox7;
+        public System.Windows.Forms.TextBox BuscarObser;
+        public System.Windows.Forms.Label label10;
     }
 }

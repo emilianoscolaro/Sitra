@@ -14,14 +14,15 @@ namespace AvicolaWindows
 {
     public partial class Proveedores : Explorador
     {
-        public Proveedores(string usuario,string usrlvl)
+        public Proveedores(string usuario,string usrlvl,string usrId)
         {
             InitializeComponent();
             _usuario = usuario;
             _usrlvl = usrlvl;
+            _usrId = usrId;
         }
 
-        string id, alias, nombre, apellido, local, direc, email, tel, cuit ,cuenta,_usrlvl;
+        string id, alias, nombre, apellido, local, direc, email, tel, cuit ,cuenta,_usrlvl,_usrId;
         string _usuario;
         string moneda = "AR$";
 
@@ -58,7 +59,7 @@ namespace AvicolaWindows
 
             if (!string.IsNullOrEmpty(id))
             {
-                DetalleCuenta detalle = new DetalleCuenta(alias);
+                DetalleCuenta detalle = new DetalleCuenta(alias,_usrId);
                 detalle.Show();
             }
             else { MessageBox.Show("Debe seleccionar un cliente"); }
@@ -127,7 +128,7 @@ namespace AvicolaWindows
         {
             if (!string.IsNullOrEmpty(id))
             {
-                DetalleCuenta detalle = new DetalleCuenta(alias);
+                DetalleCuenta detalle = new DetalleCuenta(alias, _usrId);
                 detalle.Show();
             }
             else { MessageBox.Show("Debe seleccionar un cliente"); }

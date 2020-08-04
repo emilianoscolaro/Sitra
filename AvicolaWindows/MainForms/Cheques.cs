@@ -57,6 +57,8 @@ namespace AvicolaWindows.MainForms
             ExportarExel(DtClientes, "Cheques");
         }
 
+
+
         private void EliminarBtn_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(id))
@@ -99,26 +101,35 @@ namespace AvicolaWindows.MainForms
            
         }
 
+        private void BuscarPorNumTxt_MouseDown(object sender, MouseEventArgs e)
+        {
+            BuscarPorNumTxt.SelectAll();
+        }
 
+        private void BuscarPorNumTxt_KeyUp(object sender, KeyEventArgs e)
+        {
+            Buscar(BuscarPorNumTxt, "Cheques", "Numero", DtClientes);
+            if (BuscarPorNumTxt.Text == "") { LoadGrid(); OcultarIdCero(DtClientes); }
+        }
 
 
         // Funciones
 
-      //  private void SumaTotal()
-      //  {
-      //      double total = 0;
-      //      foreach (DataGridViewRow row in DtClientes.Rows)
-      //      {
-      //          total += Convert.ToDouble(row.Cells["Importe"].Value);
-      //      }
-      //      TotalTkt.Text = "AR$ " + string.Format("{0:n}", total);
-      //
-      //  }
+        //  private void SumaTotal()
+        //  {
+        //      double total = 0;
+        //      foreach (DataGridViewRow row in DtClientes.Rows)
+        //      {
+        //          total += Convert.ToDouble(row.Cells["Importe"].Value);
+        //      }
+        //      TotalTkt.Text = "AR$ " + string.Format("{0:n}", total);
+        //
+        //  }
 
         private void LoadGrid()
         {
             DtClientes.DataSource = LlenarDataGrid("Cheques").Tables[0];
-            this.DtClientes.Columns["Numero"].Visible = false;
+            //this.DtClientes.Columns["Numero"].Visible = false;
             DtClientes.Columns[0].Width = 60;
             DtClientes.Sort(DtClientes.Columns[0], ListSortDirection.Descending);
         }

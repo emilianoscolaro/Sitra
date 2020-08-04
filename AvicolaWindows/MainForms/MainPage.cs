@@ -237,13 +237,13 @@ namespace AvicolaWindows
             }
             if (activeForm.Text == "CrearCliente" && tipo == "Cliente")
             {
-                OpenChildForm(new Clientes(_usuario,_usrNivel));
+                OpenChildForm(new Clientes(_usuario,_usrNivel,_usrId));
                 NuevoBtn.Visible = true;
                 BarWhiteColor();
             }
             if (activeForm.Text == "CrearCliente" && tipo == "Proveedor")
             {
-                OpenChildForm(new Proveedores(_usuario, _usrNivel));
+                OpenChildForm(new Proveedores(_usuario, _usrNivel,_usrId));
                 NuevoBtn.Visible = true;
                 BarWhiteColor();
             }
@@ -304,7 +304,7 @@ namespace AvicolaWindows
 
         private void ClientesBtn_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Clientes(_usuario, _usrNivel));
+            OpenChildForm(new Clientes(_usuario, _usrNivel, _usrId));
             NuevoBtn.Visible = true;
             BackBtn.Visible = false;
             BarWhiteColor();
@@ -325,7 +325,7 @@ namespace AvicolaWindows
 
         private void ProveedoresBtn_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Proveedores(_usuario, _usrNivel));
+            OpenChildForm(new Proveedores(_usuario, _usrNivel, _usrId));
             NuevoBtn.Visible = true;
             BackBtn.Visible = false;
             BarWhiteColor();

@@ -1,4 +1,5 @@
-﻿using AvicolaWindows.Data;
+﻿using AvicolaWindows.Base;
+using AvicolaWindows.Data;
 using DocumentFormat.OpenXml.Office2013.PowerPoint.Roaming;
 using SpreadsheetLight;
 using System;
@@ -15,17 +16,21 @@ namespace AvicolaWindows.MainForms
 {
     public partial class DetalleCuenta : Form
     {
-        public DetalleCuenta(string cliente)
+        public DetalleCuenta(string cliente,string usrId)
         {
             InitializeComponent();
 
             _cliente = cliente;
+            _usrId = usrId;
         }
 
         string _cliente,ruta;
+        string _usrId;
         float cuenta;
         DataSet Ds;
-
+        string selectId, selectType,selectedCliente;
+        string tipo;
+        string foto;
 
         private void DetalleCuenta_Load(object sender, EventArgs e)
         {
@@ -141,7 +146,7 @@ namespace AvicolaWindows.MainForms
             cuenta = 0;
             for (int i = 0; i < DtCuenta.RowCount; i++)
             {
-                if(DtCuenta.Rows[i].Cells[2].Value.ToString() == "Op.Venta")
+                if(DtCuenta.Rows[i].Cells[2].Value.ToString() == "Op.Venta" && DtCuenta.Rows[i].Cells[6].Value.ToString() != "Pagado al contado | ")
                 {
                     cuenta += float.Parse(DtCuenta.Rows[i].Cells[4].Value.ToString());    
                 }
@@ -185,11 +190,58 @@ namespace AvicolaWindows.MainForms
             Suma();
         }
 
+        private void DtCuenta_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            selectedCliente = Explorador.Seleccionar(selectedCliente, DtCuenta, 1);
+            selectId = Explorador.Seleccionar(selectId, DtCuenta, 3);
+            selectType = Explorador.Seleccionar(selectType, DtCuenta, 2);
+        }
+
+        private void DtCuenta_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            TypeFilter();
+            if(tipo == "Cliente" || tipo== "Proveedor")
+            {
+                Factura fc = new Factura(selectedCliente, selectId, _usrId,tipo);
+                fc.Show();
+            }
+            if(tipo =="Cobranzas" || tipo == "Pagos")
+            {
+                VerificarFoto();
+                if (!string.IsNullOrEmpty(foto))
+                {
+                    Foto nuevafoto = new Foto(selectId, tipo);
+                    nuevafoto.Show();
+                }
+                else
+                {
+                    MessageBox.Show("El " + selectType + " no contiene ninguna imagen");
+                }
+
+            }
+
+
+        }
+
         private void ExelBtn_MouseLeave(object sender, EventArgs e)
         {
             ExelBtn.Size = ExelBtn.Size - new Size(5, 5);
         }
 
+        private void TypeFilter()
+        {
+            if(selectType == "Op.Venta") { tipo = "Cliente"; }
+            if(selectType == "Op.Compra") { tipo = "Proveedor"; }
+            if (selectType == "Pago") { tipo = "Pagos"; }
+            if (selectType == "Cobro") { tipo = "Cobranzas"; }
 
+        }
+
+        private void VerificarFoto()
+        {
+            string cmd = string.Format("SELECT foto from " + tipo + " where Id =" + selectId + "");
+            Ds = Utilidades.Ejecutar(cmd);
+            foto = Ds.Tables[0].Rows[0]["Foto"].ToString();
+        }
     }
 }

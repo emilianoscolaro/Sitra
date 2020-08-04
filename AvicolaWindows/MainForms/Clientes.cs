@@ -15,14 +15,15 @@ namespace AvicolaWindows
 {
     public partial class Clientes : Explorador
     {
-        public Clientes(string usuario,string usrlvl)
+        public Clientes(string usuario,string usrlvl,string usrId)
         {
             InitializeComponent();
             _usuario = usuario;
             _usrlvl = usrlvl;
+            _userId = usrId;
         }
 
-        string id, alias, nombre, apellido, local, direc, email, tel, cuit,cuenta,_usrlvl;
+        string id, alias, nombre, apellido, local, direc, email, tel, cuit,cuenta,_usrlvl,_userId;
         string _usuario;
         string moneda = "AR$";
 
@@ -91,7 +92,7 @@ namespace AvicolaWindows
 
         private void DtClientes_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            DetalleCuenta detalle = new DetalleCuenta(alias);
+            DetalleCuenta detalle = new DetalleCuenta(alias,_userId);
             detalle.Show();
         }
 
@@ -137,7 +138,7 @@ namespace AvicolaWindows
 
             if (!string.IsNullOrEmpty(id))
             {
-                DetalleCuenta detalle = new DetalleCuenta(alias);
+                DetalleCuenta detalle = new DetalleCuenta(alias,_userId);
                 detalle.Show();
             }
             else { MessageBox.Show("Debe seleccionar un cliente"); }

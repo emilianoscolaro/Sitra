@@ -185,6 +185,7 @@ namespace AvicolaWindows
             if (hayFoto == true)
             {
                 bd.InsertarImagen(_tipo, index, FechaTxt.Text, _usr, ClienteProvBox.Text, FormaDePago(), ImporteTxt.Text, ObservacionesTxt.Text, pictureBox3,TipoDeClienteSeleccionado());
+                bd.InsertarDetalle(_tipo, index, FechaTxt.Text, ClienteProvBox.Text, ImporteTxt.Text, ObservacionesTxt.Text);
             }
             else
             {

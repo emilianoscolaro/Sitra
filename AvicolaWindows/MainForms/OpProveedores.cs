@@ -86,8 +86,20 @@ namespace AvicolaWindows
 
         private void BuscarCliente_KeyUp(object sender, KeyEventArgs e)
         {
-            BuscarOp(BuscarCliente, "OpProveedores", "Cliente", DtClientes);
+            BuscarOp(BuscarCliente, "OpProveedores", "Proveedor", DtClientes);
             if (BuscarCliente.Text == "") { LoadGrid(); OcultarIdCero(DtClientes); }
+            SumaTotal();
+        }
+
+        private void BuscarObser_MouseDown(object sender, MouseEventArgs e)
+        {
+            BuscarObser.SelectAll();
+        }
+
+        private void BuscarObser_KeyUp(object sender, KeyEventArgs e)
+        {
+            BuscarOp(BuscarObser, "OpProveedores", "Observaciones", DtClientes);
+            if (BuscarObser.Text == "") { LoadGrid(); OcultarIdCero(DtClientes); }
             SumaTotal();
         }
 
@@ -239,6 +251,8 @@ namespace AvicolaWindows
         {
             ExportarExel(DtClientes, "Operaciones de Compra");
         }
+
+
 
         private void DtClientes_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {

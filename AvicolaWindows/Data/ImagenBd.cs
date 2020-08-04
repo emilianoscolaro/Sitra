@@ -21,6 +21,7 @@ namespace AvicolaWindows.Data
         public ImagenBd() { conectar(); }
 
         SqlDataAdapter da;
+        string detalleTipo;
         
         public DataTable consultar2(string tabla)
         {
@@ -72,9 +73,39 @@ namespace AvicolaWindows.Data
                 return true;
             }
             else { return false; }
+        }
+
+
+        public bool InsertarDetalle(string tipo, int id, string fecha, string cliente, string importe, string observaciones)
+        {
+            if (tipo == "Pagos") { detalleTipo = "Pago"; }
+            if (tipo == "Cobranzas") { detalleTipo = "Cobro"; }
+            cmd.Connection = conn;
+            cmd.CommandText = "insert into DetallesCuentas (Fecha,Cliente,Descripcion,ID,Valor,Observaciones) values (@fecha2,@cliente2,'" + detalleTipo + "',@id2,@importe2,@observaciones2)";
+
+            cmd.Parameters.Add("@id2", SqlDbType.Int);
+            cmd.Parameters.Add("@fecha2", SqlDbType.DateTime);
+            cmd.Parameters.Add("@cliente2", SqlDbType.NVarChar);
+            cmd.Parameters.Add("@importe2", SqlDbType.Float);
+            cmd.Parameters.Add("@observaciones2", SqlDbType.NVarChar);
+
+            cmd.Parameters["@id2"].Value = id;
+            cmd.Parameters["@fecha2"].Value = fecha;
+            cmd.Parameters["@cliente2"].Value = cliente;
+            cmd.Parameters["@importe2"].Value = importe;
+            cmd.Parameters["@observaciones2"].Value = observaciones;
+
+            conn.Open();
+            int i = cmd.ExecuteNonQuery();
+            conn.Close();
+
+            if (i > 0)
+            {
+                return true;
+            }
+            else { return false; }
 
         }
-         
 
         public bool InsertarSoloImagen(string id ,PictureBox imagen,string tipo)
         {

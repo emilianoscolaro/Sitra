@@ -38,6 +38,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.ExelBtn = new System.Windows.Forms.Button();
             this.CuentaTotalTxt = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -47,7 +48,6 @@
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel2.SuspendLayout();
@@ -122,6 +122,18 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(817, 623);
             this.panel2.TabIndex = 1;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.Location = new System.Drawing.Point(551, 22);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(78, 21);
+            this.checkBox1.TabIndex = 92;
+            this.checkBox1.Text = "Cuenta";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // ExelBtn
             // 
@@ -230,6 +242,8 @@
             this.DtCuenta.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DtCuenta.Size = new System.Drawing.Size(795, 430);
             this.DtCuenta.TabIndex = 87;
+            this.DtCuenta.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DtCuenta_CellClick);
+            this.DtCuenta.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DtCuenta_CellDoubleClick);
             this.DtCuenta.ColumnHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DtCuenta_ColumnHeaderMouseClick);
             // 
             // label6
@@ -305,18 +319,6 @@
             this.label7.Size = new System.Drawing.Size(45, 17);
             this.label7.TabIndex = 82;
             this.label7.Text = "Hasta";
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(551, 22);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(78, 21);
-            this.checkBox1.TabIndex = 92;
-            this.checkBox1.Text = "Cuenta";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // DetalleCuenta
             // 

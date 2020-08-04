@@ -123,6 +123,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.ArtPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -447,7 +448,7 @@
             this.l10.BackColor = System.Drawing.Color.Transparent;
             this.l10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l10.ForeColor = System.Drawing.Color.Black;
-            this.l10.Location = new System.Drawing.Point(21, 875);
+            this.l10.Location = new System.Drawing.Point(21, 1311);
             this.l10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.l10.Name = "l10";
             this.l10.Size = new System.Drawing.Size(31, 17);
@@ -1406,7 +1407,7 @@
             this.CrearBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CrearBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CrearBtn.ForeColor = System.Drawing.Color.White;
-            this.CrearBtn.Location = new System.Drawing.Point(419, 473);
+            this.CrearBtn.Location = new System.Drawing.Point(289, 467);
             this.CrearBtn.Margin = new System.Windows.Forms.Padding(2);
             this.CrearBtn.Name = "CrearBtn";
             this.CrearBtn.Size = new System.Drawing.Size(284, 40);
@@ -1477,12 +1478,28 @@
             this.label2.TabIndex = 71;
             this.label2.Text = "Valor Unidad";
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkBox1.FlatAppearance.CheckedBackColor = System.Drawing.Color.Red;
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(171)))), ((int)(((byte)(115)))));
+            this.checkBox1.Location = new System.Drawing.Point(699, 472);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(100, 28);
+            this.checkBox1.TabIndex = 72;
+            this.checkBox1.Text = "Pagado";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged_1);
+            // 
             // CrearOperacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(913, 566);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.ObservacionesTxt);
@@ -1617,5 +1634,6 @@
         public System.Windows.Forms.Label l3;
         public System.Windows.Forms.Label l2;
         public System.Windows.Forms.Label l1;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }

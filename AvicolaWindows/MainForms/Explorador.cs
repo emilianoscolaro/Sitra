@@ -79,7 +79,7 @@ namespace AvicolaWindows
                 try
                 {
                     DataSet ds;
-                    string cmd = "Select ID,fecha,Usuario,Cliente,Observaciones,Total FROM " + Tabla + " where " + variable + " LIKE ('%" + buscarbox.Text.Trim() + "%')";
+                    string cmd = "Select ID,fecha,Usuario,"+variable+",Observaciones,Total FROM " + Tabla + " where " + variable + " LIKE ('%" + buscarbox.Text.Trim() + "%')";
 
                     ds = Utilidades.Ejecutar(cmd);
                     dt.DataSource = ds.Tables[0];
@@ -136,7 +136,7 @@ namespace AvicolaWindows
             }
         }
 
-        public string Seleccionar(string seleccion,DataGridView dt,int celda)
+        static public string Seleccionar(string seleccion,DataGridView dt,int celda)
         {
             seleccion = dt.CurrentRow.Cells[celda].Value.ToString();
             return seleccion;

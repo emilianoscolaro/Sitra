@@ -110,7 +110,17 @@ namespace AvicolaWindows
             SumaTotal();
         }
 
+        private void BuscarObser_MouseDown(object sender, MouseEventArgs e)
+        {
+            BuscarObser.SelectAll();
+        }
 
+        private void BuscarObser_KeyUp(object sender, KeyEventArgs e)
+        {
+            BuscarOp(BuscarObser, "OpClientes", "Observaciones", DtClientes);
+            if (BuscarObser.Text == "") { LoadGrid(); OcultarIdCero(DtClientes); }
+            SumaTotal();
+        }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
@@ -241,6 +251,8 @@ namespace AvicolaWindows
         {
             ExportarExel(DtClientes, "Operaciones de Venta");
         }
+
+
 
         private void SumaTotal()
         {

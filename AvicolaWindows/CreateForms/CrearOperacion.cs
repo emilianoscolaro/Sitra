@@ -1,4 +1,5 @@
 ﻿using AvicolaWindows.Data;
+using AvicolaWindows.MainForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -28,6 +29,7 @@ namespace AvicolaWindows
         int index;
         string _usuario;
         float valorf, totalf, cantf;
+        bool pagado = false;
 
 
         private void CrearOperacion_Load(object sender, EventArgs e)
@@ -42,6 +44,8 @@ namespace AvicolaWindows
             
             NombreTxt.Text = _cliente;
 
+            // Restringir a provedorres
+            if (_tipo == "Proveedor") { checkBox1.Enabled = false; }
 
             try
             {
@@ -85,6 +89,12 @@ namespace AvicolaWindows
             {
                 try
                 {
+                    if (pagado == false)
+                    {
+                        string cmdcuenta = string.Format("EXEC OpClienteCuenta '{0}','{1}'", _cliente, TotalText.Text);
+                        Utilidades.Ejecutar(cmdcuenta);
+                    }
+                    else { if (pagado == true) { ObservacionesTxt.Text = "Pagado al contado | " + ObservacionesTxt.Text; } }
                     string cmd = string.Format("EXEC CrearOpCliente '{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}','{13}','{14" +
                         "}','{15}','{16}','{17}','{18}','{19}','{20}','{21}','{22}','{23}','{24}','{25}','{26}','{27}','{28}','{29}','{30}','{31}','{32}','{33}','{34}','{35}'," +
                         "'{36}','{37}','{38}','{39}','{40}','{41}','{42}','{43}','{44}','{45}','{46}','{47}','{48}','{49}','{50}'",
@@ -94,8 +104,7 @@ namespace AvicolaWindows
                         Val1.Text,Val2.Text, Val3.Text, Val4.Text, Val5.Text, Val6.Text, Val7.Text, Val8.Text, Val9.Text, Val10.Text, Val11.Text, Val12.Text, Val13.Text, Val14.Text, Val15.Text);
                     Utilidades.Ejecutar(cmd);
                     ActualizarInventario();
-                    string cmdcuenta = string.Format("EXEC OpClienteCuenta '{0}','{1}'", _cliente, TotalText.Text);
-                    Utilidades.Ejecutar(cmdcuenta);
+
                     this.Close();
                 }
                 catch (Exception error)
@@ -345,6 +354,14 @@ namespace AvicolaWindows
         private void Cant1_KeyUp_1(object sender, KeyEventArgs e)
         {
             MultiplicarUnidad(Un1, Cant1, Val1);
+        }
+
+
+
+        private void checkBox1_CheckedChanged_1(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked == true) { pagado = true;ObservacionesTxt.Enabled = false;ObservacionesTxt.Text = ""; }
+            if (checkBox1.Checked == false) { pagado = false; ObservacionesTxt.Enabled = true; }
         }
 
         private void Val4_KeyUp(object sender, KeyEventArgs e)
