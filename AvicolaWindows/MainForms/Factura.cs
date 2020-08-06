@@ -36,6 +36,7 @@ namespace AvicolaWindows
             if (_tipo == "Cliente") { _tipoOp = "OpClientes"; }
         }
 
+        
         private void Factura_Load(object sender, EventArgs e)
         {
             SeleccionarTabla();
@@ -65,8 +66,18 @@ namespace AvicolaWindows
             sVisibles(Cant10);
             sVisibles(Cant11);
             sVisibles(Cant12);
-
-
+            Un1.Text = CalcularPrecioUnitario(Cant1.Text, Val1.Text, Un1.Text);
+            Un2.Text = CalcularPrecioUnitario(Cant2.Text, Val2.Text, Un2.Text);
+            Un3.Text = CalcularPrecioUnitario(Cant3.Text, Val3.Text, Un3.Text);
+            Un4.Text = CalcularPrecioUnitario(Cant4.Text, Val4.Text, Un4.Text);
+            Un5.Text = CalcularPrecioUnitario(Cant5.Text, Val5.Text, Un5.Text);
+            Un6.Text = CalcularPrecioUnitario(Cant6.Text, Val6.Text, Un6.Text);
+            Un7.Text = CalcularPrecioUnitario(Cant7.Text, Val7.Text, Un7.Text);
+            Un8.Text = CalcularPrecioUnitario(Cant8.Text, Val8.Text, Un8.Text);
+            Un9.Text = CalcularPrecioUnitario(Cant9.Text, Val9.Text, Un9.Text);
+            Un10.Text = CalcularPrecioUnitario(Cant10.Text, Val10.Text, Un10.Text);
+            Un11.Text = CalcularPrecioUnitario(Cant11.Text, Val11.Text, Un11.Text);
+            Un12.Text = CalcularPrecioUnitario(Cant12.Text, Val12.Text, Un12.Text);
 
         }
 
@@ -294,7 +305,17 @@ namespace AvicolaWindows
             pictureBox6.SendToBack();
         }
 
-
+        private string CalcularPrecioUnitario(string cant,string total, string unitario)
+        {
+            if (!string.IsNullOrEmpty(cant) && cant != "0")
+            {
+                double a = Convert.ToDouble(cant);
+                double b = Convert.ToDouble(total);
+                double c = b / a;
+                return unitario = c.ToString();
+            }
+            return unitario;
+        }
 
 
     }

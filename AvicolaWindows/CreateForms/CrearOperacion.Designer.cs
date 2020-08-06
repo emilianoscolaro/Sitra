@@ -448,7 +448,7 @@
             this.l10.BackColor = System.Drawing.Color.Transparent;
             this.l10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l10.ForeColor = System.Drawing.Color.Black;
-            this.l10.Location = new System.Drawing.Point(21, 1311);
+            this.l10.Location = new System.Drawing.Point(21, 1747);
             this.l10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.l10.Name = "l10";
             this.l10.Size = new System.Drawing.Size(31, 17);
@@ -613,7 +613,7 @@
             this.Un15.Margin = new System.Windows.Forms.Padding(2);
             this.Un15.Name = "Un15";
             this.Un15.Size = new System.Drawing.Size(82, 23);
-            this.Un15.TabIndex = 44;
+            this.Un15.TabIndex = 58;
             this.Un15.Visible = false;
             this.Un15.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Un2_KeyPress);
             // 
@@ -625,7 +625,7 @@
             this.Un14.Margin = new System.Windows.Forms.Padding(2);
             this.Un14.Name = "Un14";
             this.Un14.Size = new System.Drawing.Size(82, 23);
-            this.Un14.TabIndex = 41;
+            this.Un14.TabIndex = 54;
             this.Un14.Visible = false;
             this.Un14.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Un2_KeyPress);
             // 
@@ -637,7 +637,7 @@
             this.Un13.Margin = new System.Windows.Forms.Padding(2);
             this.Un13.Name = "Un13";
             this.Un13.Size = new System.Drawing.Size(82, 23);
-            this.Un13.TabIndex = 38;
+            this.Un13.TabIndex = 50;
             this.Un13.Visible = false;
             this.Un13.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Un2_KeyPress);
             // 
@@ -649,7 +649,7 @@
             this.Un12.Margin = new System.Windows.Forms.Padding(2);
             this.Un12.Name = "Un12";
             this.Un12.Size = new System.Drawing.Size(82, 23);
-            this.Un12.TabIndex = 35;
+            this.Un12.TabIndex = 46;
             this.Un12.Visible = false;
             this.Un12.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Un2_KeyPress);
             // 
@@ -661,7 +661,7 @@
             this.Un11.Margin = new System.Windows.Forms.Padding(2);
             this.Un11.Name = "Un11";
             this.Un11.Size = new System.Drawing.Size(82, 23);
-            this.Un11.TabIndex = 32;
+            this.Un11.TabIndex = 42;
             this.Un11.Visible = false;
             this.Un11.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Un2_KeyPress);
             // 
@@ -673,7 +673,7 @@
             this.Un10.Margin = new System.Windows.Forms.Padding(2);
             this.Un10.Name = "Un10";
             this.Un10.Size = new System.Drawing.Size(82, 23);
-            this.Un10.TabIndex = 29;
+            this.Un10.TabIndex = 38;
             this.Un10.Visible = false;
             this.Un10.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Un2_KeyPress);
             // 
@@ -685,7 +685,7 @@
             this.Un9.Margin = new System.Windows.Forms.Padding(2);
             this.Un9.Name = "Un9";
             this.Un9.Size = new System.Drawing.Size(82, 23);
-            this.Un9.TabIndex = 26;
+            this.Un9.TabIndex = 34;
             this.Un9.Visible = false;
             this.Un9.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Un2_KeyPress);
             // 
@@ -697,7 +697,7 @@
             this.Un8.Margin = new System.Windows.Forms.Padding(2);
             this.Un8.Name = "Un8";
             this.Un8.Size = new System.Drawing.Size(82, 23);
-            this.Un8.TabIndex = 23;
+            this.Un8.TabIndex = 30;
             this.Un8.Visible = false;
             this.Un8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Un2_KeyPress);
             // 
@@ -709,7 +709,7 @@
             this.Un7.Margin = new System.Windows.Forms.Padding(2);
             this.Un7.Name = "Un7";
             this.Un7.Size = new System.Drawing.Size(82, 23);
-            this.Un7.TabIndex = 20;
+            this.Un7.TabIndex = 26;
             this.Un7.Visible = false;
             this.Un7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Un2_KeyPress);
             // 
@@ -721,7 +721,7 @@
             this.Un6.Margin = new System.Windows.Forms.Padding(2);
             this.Un6.Name = "Un6";
             this.Un6.Size = new System.Drawing.Size(82, 23);
-            this.Un6.TabIndex = 17;
+            this.Un6.TabIndex = 22;
             this.Un6.Visible = false;
             this.Un6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Un2_KeyPress);
             // 
@@ -733,7 +733,7 @@
             this.Un5.Margin = new System.Windows.Forms.Padding(2);
             this.Un5.Name = "Un5";
             this.Un5.Size = new System.Drawing.Size(82, 23);
-            this.Un5.TabIndex = 14;
+            this.Un5.TabIndex = 18;
             this.Un5.Visible = false;
             this.Un5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Un2_KeyPress);
             // 
@@ -745,7 +745,7 @@
             this.Un4.Margin = new System.Windows.Forms.Padding(2);
             this.Un4.Name = "Un4";
             this.Un4.Size = new System.Drawing.Size(82, 23);
-            this.Un4.TabIndex = 11;
+            this.Un4.TabIndex = 14;
             this.Un4.Visible = false;
             this.Un4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Un2_KeyPress);
             // 
@@ -757,7 +757,7 @@
             this.Un3.Margin = new System.Windows.Forms.Padding(2);
             this.Un3.Name = "Un3";
             this.Un3.Size = new System.Drawing.Size(82, 23);
-            this.Un3.TabIndex = 8;
+            this.Un3.TabIndex = 10;
             this.Un3.Visible = false;
             this.Un3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Un2_KeyPress);
             // 
@@ -769,7 +769,7 @@
             this.Un2.Margin = new System.Windows.Forms.Padding(2);
             this.Un2.Name = "Un2";
             this.Un2.Size = new System.Drawing.Size(82, 23);
-            this.Un2.TabIndex = 5;
+            this.Un2.TabIndex = 6;
             this.Un2.Visible = false;
             this.Un2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Un2_KeyPress);
             // 
@@ -792,7 +792,7 @@
             this.Val15.Margin = new System.Windows.Forms.Padding(2);
             this.Val15.Name = "Val15";
             this.Val15.Size = new System.Drawing.Size(82, 23);
-            this.Val15.TabIndex = 46;
+            this.Val15.TabIndex = 60;
             this.Val15.Visible = false;
             this.Val15.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Val15_KeyPress);
             this.Val15.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Val15_KeyUp);
@@ -805,7 +805,7 @@
             this.Cant15.Margin = new System.Windows.Forms.Padding(2);
             this.Cant15.Name = "Cant15";
             this.Cant15.Size = new System.Drawing.Size(52, 23);
-            this.Cant15.TabIndex = 45;
+            this.Cant15.TabIndex = 59;
             this.Cant15.Visible = false;
             this.Cant15.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Cant1_KeyPress);
             this.Cant15.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Cant15_KeyUp);
@@ -821,7 +821,7 @@
             this.Art15.Margin = new System.Windows.Forms.Padding(2);
             this.Art15.Name = "Art15";
             this.Art15.Size = new System.Drawing.Size(155, 24);
-            this.Art15.TabIndex = 71;
+            this.Art15.TabIndex = 57;
             this.Art15.Visible = false;
             // 
             // Val14
@@ -832,7 +832,7 @@
             this.Val14.Margin = new System.Windows.Forms.Padding(2);
             this.Val14.Name = "Val14";
             this.Val14.Size = new System.Drawing.Size(82, 23);
-            this.Val14.TabIndex = 43;
+            this.Val14.TabIndex = 56;
             this.Val14.Visible = false;
             this.Val14.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Val14_KeyPress);
             this.Val14.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Val14_KeyUp);
@@ -845,7 +845,7 @@
             this.Cant14.Margin = new System.Windows.Forms.Padding(2);
             this.Cant14.Name = "Cant14";
             this.Cant14.Size = new System.Drawing.Size(52, 23);
-            this.Cant14.TabIndex = 42;
+            this.Cant14.TabIndex = 55;
             this.Cant14.Visible = false;
             this.Cant14.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Cant1_KeyPress);
             this.Cant14.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Cant14_KeyUp);
@@ -861,7 +861,7 @@
             this.Art14.Margin = new System.Windows.Forms.Padding(2);
             this.Art14.Name = "Art14";
             this.Art14.Size = new System.Drawing.Size(155, 24);
-            this.Art14.TabIndex = 62;
+            this.Art14.TabIndex = 53;
             this.Art14.Visible = false;
             // 
             // Val13
@@ -872,7 +872,7 @@
             this.Val13.Margin = new System.Windows.Forms.Padding(2);
             this.Val13.Name = "Val13";
             this.Val13.Size = new System.Drawing.Size(82, 23);
-            this.Val13.TabIndex = 40;
+            this.Val13.TabIndex = 52;
             this.Val13.Visible = false;
             this.Val13.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Val13_KeyPress);
             this.Val13.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Val13_KeyUp);
@@ -885,7 +885,7 @@
             this.Cant13.Margin = new System.Windows.Forms.Padding(2);
             this.Cant13.Name = "Cant13";
             this.Cant13.Size = new System.Drawing.Size(52, 23);
-            this.Cant13.TabIndex = 39;
+            this.Cant13.TabIndex = 51;
             this.Cant13.Visible = false;
             this.Cant13.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Cant1_KeyPress);
             this.Cant13.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Cant13_KeyUp);
@@ -901,7 +901,7 @@
             this.Art13.Margin = new System.Windows.Forms.Padding(2);
             this.Art13.Name = "Art13";
             this.Art13.Size = new System.Drawing.Size(155, 24);
-            this.Art13.TabIndex = 59;
+            this.Art13.TabIndex = 49;
             this.Art13.Visible = false;
             // 
             // Val12
@@ -912,7 +912,7 @@
             this.Val12.Margin = new System.Windows.Forms.Padding(2);
             this.Val12.Name = "Val12";
             this.Val12.Size = new System.Drawing.Size(82, 23);
-            this.Val12.TabIndex = 37;
+            this.Val12.TabIndex = 48;
             this.Val12.Visible = false;
             this.Val12.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Val12_KeyPress);
             this.Val12.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Val12_KeyUp);
@@ -925,7 +925,7 @@
             this.Cant12.Margin = new System.Windows.Forms.Padding(2);
             this.Cant12.Name = "Cant12";
             this.Cant12.Size = new System.Drawing.Size(52, 23);
-            this.Cant12.TabIndex = 36;
+            this.Cant12.TabIndex = 47;
             this.Cant12.Visible = false;
             this.Cant12.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Cant1_KeyPress);
             this.Cant12.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Cant12_KeyUp);
@@ -937,6 +937,7 @@
             this.Art12.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.Art12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Art12.FormattingEnabled = true;
+            this.Art12.ItemHeight = 16;
             this.Art12.Location = new System.Drawing.Point(63, 463);
             this.Art12.Margin = new System.Windows.Forms.Padding(2);
             this.Art12.Name = "Art12";
@@ -952,7 +953,7 @@
             this.Val11.Margin = new System.Windows.Forms.Padding(2);
             this.Val11.Name = "Val11";
             this.Val11.Size = new System.Drawing.Size(82, 23);
-            this.Val11.TabIndex = 34;
+            this.Val11.TabIndex = 44;
             this.Val11.Visible = false;
             this.Val11.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Val11_KeyPress);
             this.Val11.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Val11_KeyUp);
@@ -965,7 +966,7 @@
             this.Cant11.Margin = new System.Windows.Forms.Padding(2);
             this.Cant11.Name = "Cant11";
             this.Cant11.Size = new System.Drawing.Size(52, 23);
-            this.Cant11.TabIndex = 33;
+            this.Cant11.TabIndex = 43;
             this.Cant11.Visible = false;
             this.Cant11.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Cant1_KeyPress);
             this.Cant11.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Cant11_KeyUp);
@@ -977,6 +978,7 @@
             this.Art11.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.Art11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Art11.FormattingEnabled = true;
+            this.Art11.ItemHeight = 16;
             this.Art11.Location = new System.Drawing.Point(63, 422);
             this.Art11.Margin = new System.Windows.Forms.Padding(2);
             this.Art11.Name = "Art11";
@@ -992,7 +994,7 @@
             this.Val10.Margin = new System.Windows.Forms.Padding(2);
             this.Val10.Name = "Val10";
             this.Val10.Size = new System.Drawing.Size(82, 23);
-            this.Val10.TabIndex = 31;
+            this.Val10.TabIndex = 40;
             this.Val10.Visible = false;
             this.Val10.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Val10_KeyPress);
             this.Val10.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Val10_KeyUp);
@@ -1005,7 +1007,7 @@
             this.Cant10.Margin = new System.Windows.Forms.Padding(2);
             this.Cant10.Name = "Cant10";
             this.Cant10.Size = new System.Drawing.Size(52, 23);
-            this.Cant10.TabIndex = 30;
+            this.Cant10.TabIndex = 39;
             this.Cant10.Visible = false;
             this.Cant10.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Cant1_KeyPress);
             this.Cant10.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Cant10_KeyUp);
@@ -1021,7 +1023,7 @@
             this.Art10.Margin = new System.Windows.Forms.Padding(2);
             this.Art10.Name = "Art10";
             this.Art10.Size = new System.Drawing.Size(155, 24);
-            this.Art10.TabIndex = 50;
+            this.Art10.TabIndex = 37;
             this.Art10.Visible = false;
             // 
             // Val9
@@ -1032,7 +1034,7 @@
             this.Val9.Margin = new System.Windows.Forms.Padding(2);
             this.Val9.Name = "Val9";
             this.Val9.Size = new System.Drawing.Size(82, 23);
-            this.Val9.TabIndex = 28;
+            this.Val9.TabIndex = 36;
             this.Val9.Visible = false;
             this.Val9.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Val9_KeyPress);
             this.Val9.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Val9_KeyUp);
@@ -1045,7 +1047,7 @@
             this.Cant9.Margin = new System.Windows.Forms.Padding(2);
             this.Cant9.Name = "Cant9";
             this.Cant9.Size = new System.Drawing.Size(52, 23);
-            this.Cant9.TabIndex = 27;
+            this.Cant9.TabIndex = 35;
             this.Cant9.Visible = false;
             this.Cant9.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Cant1_KeyPress);
             this.Cant9.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Cant9_KeyUp);
@@ -1061,7 +1063,7 @@
             this.Art9.Margin = new System.Windows.Forms.Padding(2);
             this.Art9.Name = "Art9";
             this.Art9.Size = new System.Drawing.Size(155, 24);
-            this.Art9.TabIndex = 47;
+            this.Art9.TabIndex = 33;
             this.Art9.Visible = false;
             // 
             // Val8
@@ -1072,7 +1074,7 @@
             this.Val8.Margin = new System.Windows.Forms.Padding(2);
             this.Val8.Name = "Val8";
             this.Val8.Size = new System.Drawing.Size(82, 23);
-            this.Val8.TabIndex = 25;
+            this.Val8.TabIndex = 32;
             this.Val8.Visible = false;
             this.Val8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Val8_KeyPress);
             this.Val8.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Val8_KeyUp);
@@ -1085,7 +1087,7 @@
             this.Cant8.Margin = new System.Windows.Forms.Padding(2);
             this.Cant8.Name = "Cant8";
             this.Cant8.Size = new System.Drawing.Size(52, 23);
-            this.Cant8.TabIndex = 24;
+            this.Cant8.TabIndex = 31;
             this.Cant8.Visible = false;
             this.Cant8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Cant1_KeyPress);
             this.Cant8.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Cant8_KeyUp);
@@ -1101,7 +1103,7 @@
             this.Art8.Margin = new System.Windows.Forms.Padding(2);
             this.Art8.Name = "Art8";
             this.Art8.Size = new System.Drawing.Size(155, 24);
-            this.Art8.TabIndex = 44;
+            this.Art8.TabIndex = 29;
             this.Art8.Visible = false;
             // 
             // Val7
@@ -1112,7 +1114,7 @@
             this.Val7.Margin = new System.Windows.Forms.Padding(2);
             this.Val7.Name = "Val7";
             this.Val7.Size = new System.Drawing.Size(82, 23);
-            this.Val7.TabIndex = 22;
+            this.Val7.TabIndex = 28;
             this.Val7.Visible = false;
             this.Val7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Val7_KeyPress);
             this.Val7.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Val7_KeyUp);
@@ -1125,7 +1127,7 @@
             this.Cant7.Margin = new System.Windows.Forms.Padding(2);
             this.Cant7.Name = "Cant7";
             this.Cant7.Size = new System.Drawing.Size(52, 23);
-            this.Cant7.TabIndex = 21;
+            this.Cant7.TabIndex = 27;
             this.Cant7.Visible = false;
             this.Cant7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Cant1_KeyPress);
             this.Cant7.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Cant7_KeyUp);
@@ -1141,7 +1143,7 @@
             this.Art7.Margin = new System.Windows.Forms.Padding(2);
             this.Art7.Name = "Art7";
             this.Art7.Size = new System.Drawing.Size(155, 24);
-            this.Art7.TabIndex = 41;
+            this.Art7.TabIndex = 25;
             this.Art7.Visible = false;
             // 
             // Val6
@@ -1152,7 +1154,7 @@
             this.Val6.Margin = new System.Windows.Forms.Padding(2);
             this.Val6.Name = "Val6";
             this.Val6.Size = new System.Drawing.Size(82, 23);
-            this.Val6.TabIndex = 19;
+            this.Val6.TabIndex = 24;
             this.Val6.Visible = false;
             this.Val6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Val6_KeyPress);
             this.Val6.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Val6_KeyUp);
@@ -1165,7 +1167,7 @@
             this.Cant6.Margin = new System.Windows.Forms.Padding(2);
             this.Cant6.Name = "Cant6";
             this.Cant6.Size = new System.Drawing.Size(52, 23);
-            this.Cant6.TabIndex = 18;
+            this.Cant6.TabIndex = 23;
             this.Cant6.Visible = false;
             this.Cant6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Cant1_KeyPress);
             this.Cant6.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Cant6_KeyUp);
@@ -1181,7 +1183,7 @@
             this.Art6.Margin = new System.Windows.Forms.Padding(2);
             this.Art6.Name = "Art6";
             this.Art6.Size = new System.Drawing.Size(155, 24);
-            this.Art6.TabIndex = 38;
+            this.Art6.TabIndex = 21;
             this.Art6.Visible = false;
             // 
             // Val5
@@ -1192,7 +1194,7 @@
             this.Val5.Margin = new System.Windows.Forms.Padding(2);
             this.Val5.Name = "Val5";
             this.Val5.Size = new System.Drawing.Size(82, 23);
-            this.Val5.TabIndex = 16;
+            this.Val5.TabIndex = 20;
             this.Val5.Visible = false;
             this.Val5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Val5_KeyPress);
             this.Val5.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Val5_KeyUp);
@@ -1205,7 +1207,7 @@
             this.Cant5.Margin = new System.Windows.Forms.Padding(2);
             this.Cant5.Name = "Cant5";
             this.Cant5.Size = new System.Drawing.Size(52, 23);
-            this.Cant5.TabIndex = 15;
+            this.Cant5.TabIndex = 19;
             this.Cant5.Visible = false;
             this.Cant5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Cant1_KeyPress);
             this.Cant5.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Cant5_KeyUp);
@@ -1221,7 +1223,7 @@
             this.Art5.Margin = new System.Windows.Forms.Padding(2);
             this.Art5.Name = "Art5";
             this.Art5.Size = new System.Drawing.Size(155, 24);
-            this.Art5.TabIndex = 35;
+            this.Art5.TabIndex = 17;
             this.Art5.Visible = false;
             // 
             // Val4
@@ -1232,7 +1234,7 @@
             this.Val4.Margin = new System.Windows.Forms.Padding(2);
             this.Val4.Name = "Val4";
             this.Val4.Size = new System.Drawing.Size(82, 23);
-            this.Val4.TabIndex = 13;
+            this.Val4.TabIndex = 16;
             this.Val4.Visible = false;
             this.Val4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Val4_KeyPress);
             this.Val4.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Val4_KeyUp);
@@ -1245,7 +1247,7 @@
             this.Cant4.Margin = new System.Windows.Forms.Padding(2);
             this.Cant4.Name = "Cant4";
             this.Cant4.Size = new System.Drawing.Size(52, 23);
-            this.Cant4.TabIndex = 12;
+            this.Cant4.TabIndex = 15;
             this.Cant4.Visible = false;
             this.Cant4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Cant1_KeyPress);
             this.Cant4.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Cant4_KeyUp);
@@ -1261,7 +1263,7 @@
             this.Art4.Margin = new System.Windows.Forms.Padding(2);
             this.Art4.Name = "Art4";
             this.Art4.Size = new System.Drawing.Size(155, 24);
-            this.Art4.TabIndex = 32;
+            this.Art4.TabIndex = 13;
             this.Art4.Visible = false;
             // 
             // Val3
@@ -1272,7 +1274,7 @@
             this.Val3.Margin = new System.Windows.Forms.Padding(2);
             this.Val3.Name = "Val3";
             this.Val3.Size = new System.Drawing.Size(82, 23);
-            this.Val3.TabIndex = 10;
+            this.Val3.TabIndex = 12;
             this.Val3.Visible = false;
             this.Val3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Val3_KeyPress);
             this.Val3.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Val3_KeyUp);
@@ -1285,7 +1287,7 @@
             this.Cant3.Margin = new System.Windows.Forms.Padding(2);
             this.Cant3.Name = "Cant3";
             this.Cant3.Size = new System.Drawing.Size(52, 23);
-            this.Cant3.TabIndex = 9;
+            this.Cant3.TabIndex = 11;
             this.Cant3.Visible = false;
             this.Cant3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Cant1_KeyPress);
             this.Cant3.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Cant3_KeyUp);
@@ -1301,7 +1303,7 @@
             this.Art3.Margin = new System.Windows.Forms.Padding(2);
             this.Art3.Name = "Art3";
             this.Art3.Size = new System.Drawing.Size(155, 24);
-            this.Art3.TabIndex = 29;
+            this.Art3.TabIndex = 9;
             this.Art3.Visible = false;
             // 
             // Val2
@@ -1312,7 +1314,7 @@
             this.Val2.Margin = new System.Windows.Forms.Padding(2);
             this.Val2.Name = "Val2";
             this.Val2.Size = new System.Drawing.Size(82, 23);
-            this.Val2.TabIndex = 287;
+            this.Val2.TabIndex = 8;
             this.Val2.Visible = false;
             this.Val2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Val2_KeyPress);
             this.Val2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Val2_KeyUp);
@@ -1325,7 +1327,7 @@
             this.Cant2.Margin = new System.Windows.Forms.Padding(2);
             this.Cant2.Name = "Cant2";
             this.Cant2.Size = new System.Drawing.Size(52, 23);
-            this.Cant2.TabIndex = 6;
+            this.Cant2.TabIndex = 7;
             this.Cant2.Visible = false;
             this.Cant2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Cant1_KeyPress);
             this.Cant2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Cant2_KeyUp);
@@ -1341,7 +1343,7 @@
             this.Art2.Margin = new System.Windows.Forms.Padding(2);
             this.Art2.Name = "Art2";
             this.Art2.Size = new System.Drawing.Size(155, 24);
-            this.Art2.TabIndex = 26;
+            this.Art2.TabIndex = 5;
             this.Art2.Visible = false;
             // 
             // Val1
@@ -1379,7 +1381,7 @@
             this.Art1.Margin = new System.Windows.Forms.Padding(2);
             this.Art1.Name = "Art1";
             this.Art1.Size = new System.Drawing.Size(155, 24);
-            this.Art1.TabIndex = 23;
+            this.Art1.TabIndex = 1;
             // 
             // Agregar
             // 

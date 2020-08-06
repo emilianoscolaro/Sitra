@@ -30,6 +30,7 @@ namespace AvicolaWindows
         string _usuario;
         float valorf, totalf, cantf;
         bool pagado = false;
+        DateTime fechaToday = DateTime.Today;
 
 
         private void CrearOperacion_Load(object sender, EventArgs e)
@@ -452,10 +453,11 @@ namespace AvicolaWindows
                 Art2.DataSource = Utilidades.EjecutaList();
                 Art2.DisplayMember = "Articulo";
                 Art2.Visible = true;
-                Art2.Focus();
                 Cant2.Visible = true;
                 Val2.Visible = true;
                 Un2.Visible = true;
+                Art2.Focus();
+
             }
             if (indexAgregar == 3)
             {
@@ -610,7 +612,7 @@ namespace AvicolaWindows
         {
             if (cantidad.Text == ".") { cantidad.Text = ""; }
 
-            if (!string.IsNullOrEmpty(cantidad.Text))
+            if (!string.IsNullOrEmpty(cantidad.Text) && !string.IsNullOrEmpty(valor.Text))
             {
                 valorf = float.Parse(valor.Text);
                 cantf = float.Parse(cantidad.Text);
@@ -653,23 +655,25 @@ namespace AvicolaWindows
 
         }
 
+        
+
         private void ActualizarInventario()
         {
-            string cmd2 = string.Format("EXEC OPClienteInventario '{0}', '{1}'", Art1.Text, Cant1.Text);
-            string cmd3 = string.Format("EXEC OPClienteInventario '{0}', '{1}'", Art2.Text, Cant2.Text);
-            string cmd4 = string.Format("EXEC OPClienteInventario '{0}', '{1}'", Art3.Text, Cant3.Text);
-            string cmd5 = string.Format("EXEC OPClienteInventario '{0}', '{1}'", Art4.Text, Cant4.Text);
-            string cmd6 = string.Format("EXEC OPClienteInventario '{0}', '{1}'", Art5.Text, Cant5.Text);
-            string cmd7 = string.Format("EXEC OPClienteInventario '{0}', '{1}'", Art6.Text, Cant6.Text);
-            string cmd8 = string.Format("EXEC OPClienteInventario '{0}', '{1}'", Art7.Text, Cant7.Text);
-            string cmd9 = string.Format("EXEC OPClienteInventario '{0}', '{1}'", Art8.Text, Cant8.Text);
-            string cmd10 = string.Format("EXEC OPClienteInventario '{0}', '{1}'", Art9.Text, Cant9.Text);
-            string cmd11 = string.Format("EXEC OPClienteInventario '{0}', '{1}'", Art10.Text, Cant10.Text);
-            string cmd12 = string.Format("EXEC OPClienteInventario '{0}', '{1}'", Art11.Text, Cant11.Text);
-            string cmd13 = string.Format("EXEC OPClienteInventario '{0}', '{1}'", Art12.Text, Cant12.Text);
-            string cmd14 = string.Format("EXEC OPClienteInventario '{0}', '{1}'", Art13.Text, Cant13.Text);
-            string cmd15 = string.Format("EXEC OPClienteInventario '{0}', '{1}'", Art14.Text, Cant14.Text);
-            string cmd16 = string.Format("EXEC OPClienteInventario '{0}', '{1}'", Art15.Text, Cant15.Text);
+            string cmd2 = string.Format("EXEC OPClienteInventario '{0}', '{1}','{2}'", Art1.Text, Cant1.Text, fechaToday);
+            string cmd3 = string.Format("EXEC OPClienteInventario '{0}', '{1}','{2}'", Art2.Text, Cant2.Text, fechaToday);
+            string cmd4 = string.Format("EXEC OPClienteInventario '{0}', '{1}','{2}'", Art3.Text, Cant3.Text,fechaToday);
+            string cmd5 = string.Format("EXEC OPClienteInventario '{0}', '{1}','{2}'", Art4.Text, Cant4.Text,fechaToday);
+            string cmd6 = string.Format("EXEC OPClienteInventario '{0}', '{1}','{2}'", Art5.Text, Cant5.Text,fechaToday);
+            string cmd7 = string.Format("EXEC OPClienteInventario '{0}', '{1}','{2}'", Art6.Text, Cant6.Text,fechaToday);
+            string cmd8 = string.Format("EXEC OPClienteInventario '{0}', '{1}','{2}'", Art7.Text, Cant7.Text,fechaToday);
+            string cmd9 = string.Format("EXEC OPClienteInventario '{0}', '{1}','{2}'", Art8.Text, Cant8.Text,fechaToday);
+            string cmd10 = string.Format("EXEC OPClienteInventario '{0}', '{1}','{2}'", Art9.Text, Cant9.Text, fechaToday);
+            string cmd11 = string.Format("EXEC OPClienteInventario '{0}', '{1}','{2}'", Art10.Text, Cant10.Text , fechaToday);
+            string cmd12 = string.Format("EXEC OPClienteInventario '{0}', '{1}','{2}'", Art11.Text, Cant11.Text , fechaToday);
+            string cmd13 = string.Format("EXEC OPClienteInventario '{0}', '{1}','{2}'", Art12.Text, Cant12.Text , fechaToday);
+            string cmd14 = string.Format("EXEC OPClienteInventario '{0}', '{1}','{2}'", Art13.Text, Cant13.Text , fechaToday);
+            string cmd15 = string.Format("EXEC OPClienteInventario '{0}', '{1}','{2}'", Art14.Text, Cant14.Text , fechaToday);
+            string cmd16 = string.Format("EXEC OPClienteInventario '{0}', '{1}','{2}'", Art15.Text, Cant15.Text , fechaToday);
             Utilidades.Ejecutar(cmd2);
             Utilidades.Ejecutar(cmd3);
             Utilidades.Ejecutar(cmd4);
@@ -690,21 +694,21 @@ namespace AvicolaWindows
 
         private void ActualizarInvProv()
         {
-            string cmd2 = string.Format("EXEC  OpProvInventario '{0}', '{1}'", Art1.Text, Cant1.Text);
-            string cmd3 = string.Format("EXEC  OpProvInventario '{0}', '{1}'", Art2.Text, Cant2.Text);
-            string cmd4 = string.Format("EXEC  OpProvInventario '{0}', '{1}'", Art3.Text, Cant3.Text);
-            string cmd5 = string.Format("EXEC  OpProvInventario '{0}', '{1}'", Art4.Text, Cant4.Text);
-            string cmd6 = string.Format("EXEC  OpProvInventario '{0}', '{1}'", Art5.Text, Cant5.Text);
-            string cmd7 = string.Format("EXEC  OpProvInventario '{0}', '{1}'", Art6.Text, Cant6.Text);
-            string cmd8 = string.Format("EXEC  OpProvInventario '{0}', '{1}'", Art7.Text, Cant7.Text);
-            string cmd9 = string.Format("EXEC  OpProvInventario '{0}', '{1}'", Art8.Text, Cant8.Text);
-            string cmd10 = string.Format("EXEC OpProvInventario  '{0}', '{1}'", Art9.Text, Cant9.Text);
-            string cmd11 = string.Format("EXEC OpProvInventario  '{0}', '{1}'", Art10.Text, Cant10.Text);
-            string cmd12 = string.Format("EXEC OpProvInventario  '{0}', '{1}'", Art11.Text, Cant11.Text);
-            string cmd13 = string.Format("EXEC OpProvInventario  '{0}', '{1}'", Art12.Text, Cant12.Text);
-            string cmd14 = string.Format("EXEC OpProvInventario  '{0}', '{1}'", Art13.Text, Cant13.Text);
-            string cmd15 = string.Format("EXEC OpProvInventario  '{0}', '{1}'", Art14.Text, Cant14.Text);
-            string cmd16 = string.Format("EXEC OpProvInventario  '{0}', '{1}'", Art15.Text, Cant15.Text);
+            string cmd2 = string.Format("EXEC  OpProvInventario '{0}', '{1}','{2}'", Art1.Text, Cant1.Text ,fechaToday);
+            string cmd3 = string.Format("EXEC  OpProvInventario '{0}', '{1}','{2}'", Art2.Text, Cant2.Text ,fechaToday);
+            string cmd4 = string.Format("EXEC  OpProvInventario '{0}', '{1}','{2}'", Art3.Text, Cant3.Text ,fechaToday);
+            string cmd5 = string.Format("EXEC  OpProvInventario '{0}', '{1}','{2}'", Art4.Text, Cant4.Text ,fechaToday);
+            string cmd6 = string.Format("EXEC  OpProvInventario '{0}', '{1}','{2}'", Art5.Text, Cant5.Text ,fechaToday);
+            string cmd7 = string.Format("EXEC  OpProvInventario '{0}', '{1}','{2}'", Art6.Text, Cant6.Text ,fechaToday);
+            string cmd8 = string.Format("EXEC  OpProvInventario '{0}', '{1}','{2}'", Art7.Text, Cant7.Text ,fechaToday);
+            string cmd9 = string.Format("EXEC  OpProvInventario '{0}', '{1}','{2}'", Art8.Text, Cant8.Text , fechaToday);
+            string cmd10 = string.Format("EXEC OpProvInventario  '{0}', '{1}','{2}'", Art9.Text, Cant9.Text , fechaToday);
+            string cmd11 = string.Format("EXEC OpProvInventario  '{0}', '{1}','{2}'", Art10.Text, Cant10.Text ,fechaToday);
+            string cmd12 = string.Format("EXEC OpProvInventario  '{0}', '{1}','{2}'", Art11.Text, Cant11.Text ,fechaToday);
+            string cmd13 = string.Format("EXEC OpProvInventario  '{0}', '{1}','{2}'", Art12.Text, Cant12.Text ,fechaToday);
+            string cmd14 = string.Format("EXEC OpProvInventario  '{0}', '{1}','{2}'", Art13.Text, Cant13.Text ,fechaToday);
+            string cmd15 = string.Format("EXEC OpProvInventario  '{0}', '{1}','{2}'", Art14.Text, Cant14.Text ,fechaToday);
+            string cmd16 = string.Format("EXEC OpProvInventario  '{0}', '{1}','{2}'", Art15.Text, Cant15.Text , fechaToday);
             Utilidades.Ejecutar(cmd2);
             Utilidades.Ejecutar(cmd3);
             Utilidades.Ejecutar(cmd4);

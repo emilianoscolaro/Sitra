@@ -27,6 +27,7 @@ namespace AvicolaWindows
         string observaciones;
         string _usrId;
         string moneda = "AR$";
+        DateTime fechaToday = DateTime.Today;
 
         private void LoadGrid()
         {
@@ -212,21 +213,21 @@ namespace AvicolaWindows
             string cant14 = ds.Tables[0].Rows[0]["Cant14"].ToString();
             string cant15 = ds.Tables[0].Rows[0]["Cant15"].ToString();
 
-            string cmd2 = string.Format("EXEC OpClienteInvCancel '{0}', '{1}'", art1, cant1);
-            string cmd3 = string.Format("EXEC OpClienteInvCancel '{0}', '{1}'", art2, cant2);
-            string cmd4 = string.Format("EXEC OpClienteInvCancel '{0}', '{1}'", art3, cant3);
-            string cmd5 = string.Format("EXEC OpClienteInvCancel '{0}', '{1}'", art4, cant4);
-            string cmd6 = string.Format("EXEC OpClienteInvCancel '{0}', '{1}'", art5, cant5);
-            string cmd7 = string.Format("EXEC OpClienteInvCancel '{0}', '{1}'", art6, cant6);
-            string cmd8 = string.Format("EXEC OpClienteInvCancel '{0}', '{1}'", art7, cant7);
-            string cmd9 = string.Format("EXEC OpClienteInvCancel '{0}', '{1}'", art8, cant8);
-            string cmd10 = string.Format("EXEC OpClienteInvCancel '{0}', '{1}'", art9,cant9);
-            string cmd11 = string.Format("EXEC OpClienteInvCancel '{0}', '{1}'", art10, cant10);
-            string cmd12 = string.Format("EXEC OpClienteInvCancel '{0}', '{1}'", art11, cant11);
-            string cmd13 = string.Format("EXEC OpClienteInvCancel '{0}', '{1}'", art12, cant12);
-            string cmd14 = string.Format("EXEC OpClienteInvCancel '{0}', '{1}'", art13, cant13);
-            string cmd15 = string.Format("EXEC OpClienteInvCancel '{0}', '{1}'", art14, cant14);
-            string cmd16 = string.Format("EXEC OpClienteInvCancel '{0}', '{1}'", art15, cant15);
+            string cmd2 = string.Format("EXEC OpClienteInvCancel '{0}', '{1}','{2}'", art1, cant1 ,fechaToday);
+            string cmd3 = string.Format("EXEC OpClienteInvCancel '{0}', '{1}','{2}'", art2, cant2 ,fechaToday);
+            string cmd4 = string.Format("EXEC OpClienteInvCancel '{0}', '{1}','{2}'", art3, cant3 ,fechaToday);
+            string cmd5 = string.Format("EXEC OpClienteInvCancel '{0}', '{1}','{2}'", art4, cant4 ,fechaToday);
+            string cmd6 = string.Format("EXEC OpClienteInvCancel '{0}', '{1}','{2}'", art5, cant5 ,fechaToday);
+            string cmd7 = string.Format("EXEC OpClienteInvCancel '{0}', '{1}','{2}'", art6, cant6 ,fechaToday);
+            string cmd8 = string.Format("EXEC OpClienteInvCancel '{0}', '{1}','{2}'", art7, cant7 ,fechaToday);
+            string cmd9 = string.Format("EXEC OpClienteInvCancel '{0}', '{1}','{2}'", art8, cant8 , fechaToday);
+            string cmd10 = string.Format("EXEC OpClienteInvCancel '{0}', '{1}','{2}'", art9,cant9 , fechaToday);
+            string cmd11 = string.Format("EXEC OpClienteInvCancel '{0}', '{1}','{2}'", art10, cant10, fechaToday);
+            string cmd12 = string.Format("EXEC OpClienteInvCancel '{0}', '{1}','{2}'", art11, cant11, fechaToday);
+            string cmd13 = string.Format("EXEC OpClienteInvCancel '{0}', '{1}','{2}'", art12, cant12, fechaToday);
+            string cmd14 = string.Format("EXEC OpClienteInvCancel '{0}', '{1}','{2}'", art13, cant13, fechaToday);
+            string cmd15 = string.Format("EXEC OpClienteInvCancel '{0}', '{1}','{2}'", art14, cant14, fechaToday);
+            string cmd16 = string.Format("EXEC OpClienteInvCancel '{0}', '{1}','{2}'", art15, cant15, fechaToday);
             Utilidades.Ejecutar(cmd2);
             Utilidades.Ejecutar(cmd3);
             Utilidades.Ejecutar(cmd4);

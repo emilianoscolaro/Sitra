@@ -1,4 +1,5 @@
 ﻿using AvicolaWindows.EditForms;
+using AvicolaWindows.MainForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,11 +20,13 @@ namespace AvicolaWindows
             _usrlvl = usrlvl;
         }
 
+
         string stock,id,_usrlvl,descripcion,articulo;
 
         private void BuscarBtn_Click(object sender, EventArgs e)
         {
             Buscar(BuscarTxt, "Inventario", "Artuculo", DtClientes);
+            
         }
 
         private void Inventario_Load(object sender, EventArgs e)
@@ -71,6 +74,12 @@ namespace AvicolaWindows
         private void ExelBtn_Click(object sender, EventArgs e)
         {
             ExportarExel(DtClientes, "Inventario");
+        }
+
+        private void NuevaOpBtn_Click(object sender, EventArgs e)
+        {
+            InventarioHistorico nuevoForm = new InventarioHistorico();
+            nuevoForm.Show();
         }
 
         private void VerBtn_Click(object sender, EventArgs e)

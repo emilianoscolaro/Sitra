@@ -48,9 +48,10 @@
             // label4
             // 
             this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(88, 115);
             this.label4.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label4.Size = new System.Drawing.Size(62, 20);
+            this.label4.Size = new System.Drawing.Size(70, 20);
             this.label4.Text = "Articulo";
             // 
             // BuscarTxt
@@ -78,7 +79,6 @@
             this.VerBtn.BackgroundImage = global::AvicolaWindows.Properties.Resources.EditBtn;
             this.VerBtn.Location = new System.Drawing.Point(114, 516);
             this.VerBtn.Margin = new System.Windows.Forms.Padding(1);
-            this.VerBtn.Visible = false;
             this.VerBtn.Click += new System.EventHandler(this.VerBtn_Click);
             // 
             // EliminarBtn
@@ -102,13 +102,14 @@
             // 
             // NuevaOpBtn
             // 
-            this.NuevaOpBtn.Location = new System.Drawing.Point(808, 331);
+            this.NuevaOpBtn.BackgroundImage = global::AvicolaWindows.Properties.Resources.EstadisticasBtn;
+            this.NuevaOpBtn.Location = new System.Drawing.Point(386, 516);
             this.NuevaOpBtn.Margin = new System.Windows.Forms.Padding(1);
-            this.NuevaOpBtn.Visible = false;
+            this.NuevaOpBtn.Click += new System.EventHandler(this.NuevaOpBtn_Click);
             // 
             // FacturaBtn
             // 
-            this.FacturaBtn.Location = new System.Drawing.Point(785, 445);
+            this.FacturaBtn.Location = new System.Drawing.Point(808, 406);
             this.FacturaBtn.Margin = new System.Windows.Forms.Padding(1);
             this.FacturaBtn.Visible = false;
             // 
