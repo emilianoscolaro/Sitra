@@ -45,6 +45,7 @@ namespace AvicolaWindows.MainForms
             DtCuenta.Columns[0].Width = 80;
             DtCuenta.Columns[3].Width = 60;
             this.DtCuenta.Columns["Cuenta"].Visible = false;
+            DtCuenta.Sort(DtCuenta.Columns[0], ListSortDirection.Descending);
         }
 
 
