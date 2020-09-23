@@ -448,7 +448,7 @@
             this.l10.BackColor = System.Drawing.Color.Transparent;
             this.l10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l10.ForeColor = System.Drawing.Color.Black;
-            this.l10.Location = new System.Drawing.Point(21, 1747);
+            this.l10.Location = new System.Drawing.Point(21, 1965);
             this.l10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.l10.Name = "l10";
             this.l10.Size = new System.Drawing.Size(31, 17);
@@ -1413,7 +1413,7 @@
             this.CrearBtn.Margin = new System.Windows.Forms.Padding(2);
             this.CrearBtn.Name = "CrearBtn";
             this.CrearBtn.Size = new System.Drawing.Size(284, 40);
-            this.CrearBtn.TabIndex = 28;
+            this.CrearBtn.TabIndex = 63;
             this.CrearBtn.Text = "Crear operacion";
             this.CrearBtn.UseVisualStyleBackColor = false;
             this.CrearBtn.Click += new System.EventHandler(this.CrearBtn_Click);
@@ -1440,7 +1440,7 @@
             this.ObservacionesTxt.Margin = new System.Windows.Forms.Padding(2);
             this.ObservacionesTxt.Name = "ObservacionesTxt";
             this.ObservacionesTxt.Size = new System.Drawing.Size(646, 49);
-            this.ObservacionesTxt.TabIndex = 30;
+            this.ObservacionesTxt.TabIndex = 61;
             this.ObservacionesTxt.Text = "";
             // 
             // pictureBox1
@@ -1490,7 +1490,7 @@
             this.checkBox1.Location = new System.Drawing.Point(699, 472);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(100, 28);
-            this.checkBox1.TabIndex = 72;
+            this.checkBox1.TabIndex = 62;
             this.checkBox1.Text = "Pagado";
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged_1);

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Proveedores));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -76,6 +77,7 @@
             // 
             // VerBtn
             // 
+            this.VerBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("VerBtn.BackgroundImage")));
             this.VerBtn.Location = new System.Drawing.Point(275, 519);
             this.VerBtn.Margin = new System.Windows.Forms.Padding(1);
             this.VerBtn.Click += new System.EventHandler(this.VerBtn_Click_1);

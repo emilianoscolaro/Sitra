@@ -90,11 +90,7 @@ namespace AvicolaWindows
             EditaBtn.Size = EditaBtn.Size - new Size(14, 4);
         }
 
-        private void DtClientes_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            DetalleCuenta detalle = new DetalleCuenta(alias,_userId);
-            detalle.Show();
-        }
+
 
 
 
@@ -159,7 +155,15 @@ namespace AvicolaWindows
             cuenta = Seleccionar(cuenta, DtClientes, 9);
         }
 
-
+        private void DtClientes_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (!string.IsNullOrEmpty(id))
+            {
+                CrearOperacion op = new CrearOperacion(alias, tipo, _usuario);
+                op.Show();
+            }
+            else { MessageBox.Show("Debe seleccionar un cliente"); }
+        }
 
         private void BuscarBtn_Click(object sender, EventArgs e)
         {

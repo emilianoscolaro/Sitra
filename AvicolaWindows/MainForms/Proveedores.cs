@@ -56,13 +56,12 @@ namespace AvicolaWindows
 
         private void DtClientes_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-
             if (!string.IsNullOrEmpty(id))
             {
-                DetalleCuenta detalle = new DetalleCuenta(alias,_usrId);
-                detalle.Show();
+                CrearOperacion op = new CrearOperacion(alias, tipo, _usuario);
+                op.Show();
             }
-            else { MessageBox.Show("Debe seleccionar un cliente"); }
+            else { MessageBox.Show("Debe seleccionar un Proveedor"); }
         }
 
         private void ExelBtn_Click(object sender, EventArgs e)
